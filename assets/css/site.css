@@ -111,7 +111,7 @@ p { margin: 0 0 1rem; }
 .nav.is-scrolled, .nav.is-open { background: rgba(7, 7, 8, 0.86); backdrop-filter: blur(12px); border-bottom-color: var(--line); }
 .nav__inner { height: var(--nav-h); display: flex; align-items: center; gap: 1.5rem; }
 .brand { display: inline-flex; align-items: center; gap: 0.6rem; text-decoration: none; color: var(--ink); }
-.brand__mark { width: 28px; height: 28px; color: var(--accent); }
+.brand__mark { width: 36px; height: 40px; color: #c0c7d4; }
 .brand__word { font-weight: 800; font-stretch: 80%; font-size: 1.25rem; letter-spacing: 0.06em; text-transform: uppercase; }
 .brand__by { font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-3); letter-spacing: 0.06em; }
 .nav__links { display: flex; gap: 1.5rem; margin-left: auto; }
@@ -657,3 +657,7 @@ p { margin: 0 0 1rem; }
 .h2--key { font-size: clamp(2.5rem, 1.3rem + 4.6vw, 5.6rem); max-width: 16ch; }
 .h2--key em { font-style: normal; color: var(--accent); }
 .built { padding-bottom: var(--section); }
+
+/* Outis mark in the footer */
+.foot__brand { display: flex; align-items: center; gap: 0.7rem; }
+.foot__mark { width: 30px; height: 34px; color: #c0c7d4; flex: none; }
