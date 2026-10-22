@@ -18,8 +18,8 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="shortcut icon" href="assets/img/favicon.ico">
 <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/media/v9-hero.jpg" as="image" fetchpriority="high">
-<link rel="stylesheet" href="assets/css/site.css?v=15">
+<link rel="preload" href="assets/media/v9-hero-1600.jpg" as="image" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/site.css?v=16">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -51,8 +51,9 @@
 <!-- HERO -->
 <section class="hero" id="top" aria-labelledby="hero-title">
   <div class="hero__media">
-    <video class="hero__video" data-hero autoplay muted loop playsinline preload="auto" poster="assets/media/v9-hero.jpg" aria-label="Simulation: a heap of identical robot modules crawls apart and docks into a walker, bridges a ravine, lowers a chain through a gap into a cellar, checks a column and walks back.">
-      <source src="assets/media/v9-hero.mp4" type="video/mp4">
+    <video class="hero__video" data-hero autoplay muted loop playsinline preload="auto" poster="assets/media/v9-hero-1600.jpg" aria-label="Simulation: a heap of identical robot modules crawls apart and docks into a walker, bridges a ravine, lowers a chain through a gap into a cellar, checks a column and walks back.">
+      <source src="assets/media/v9-hero-960.mp4" type="video/mp4" media="(max-width: 900px)">
+      <source src="assets/media/v9-hero-1600.mp4" type="video/mp4">
     </video>
     <div class="hero__shade" aria-hidden="true"></div>
   </div>
