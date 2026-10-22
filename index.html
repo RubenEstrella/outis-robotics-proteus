@@ -15,8 +15,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/media/v8-hero.jpg" as="image" fetchpriority="high">
-<link rel="stylesheet" href="assets/css/site.css?v=9">
+<link rel="preload" href="assets/media/v9-hero.jpg" as="image" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/site.css?v=10">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -48,8 +48,8 @@
 <!-- HERO -->
 <section class="hero" id="top" aria-labelledby="hero-title">
   <div class="hero__media">
-    <video class="hero__video" data-hero autoplay muted loop playsinline preload="auto" poster="assets/media/v8-hero.jpg" aria-label="Simulation: robot modules bridge a ravine, assemble at a rescue barrier and enter a collapsed building through a narrow gap.">
-      <source src="assets/media/v8-hero.mp4" type="video/mp4">
+    <video class="hero__video" data-hero autoplay muted loop playsinline preload="auto" poster="assets/media/v9-hero.jpg" aria-label="Simulation: a heap of identical robot modules crawls apart and docks into a walker, bridges a ravine, lowers a chain through a gap into a cellar, checks a column and walks back.">
+      <source src="assets/media/v9-hero.mp4" type="video/mp4">
     </video>
     <div class="hero__shade" aria-hidden="true"></div>
   </div>
@@ -66,6 +66,42 @@
     <span class="badge badge--concept">MK3 target · simulation</span>
     <span class="hero__note mono">Rendered from our motion planner · the hardware below is real</span>
     <button class="media-toggle media-toggle--hero" type="button" data-toggle-for="hero" aria-label="Pause background video"><span aria-hidden="true"></span></button>
+  </div>
+</section>
+
+<!-- TEAM BACKGROUND -->
+<section class="logos" aria-labelledby="logos-title">
+  <div class="wrap logos__inner">
+    <p class="logos__label mono" id="logos-title">Built by engineers from</p>
+    <div class="logos__viewport">
+      <ul class="logos__track">
+        <li><img src="assets/logos/rwth.png" alt="RWTH Aachen University" width="355" height="96" style="--h:29px" decoding="async"></li>
+        <li><img src="assets/logos/neura.png" alt="NEURA Robotics" width="519" height="96" style="--h:24px" decoding="async"></li>
+        <li><img src="assets/logos/fraunhofer-ipk.png" alt="Fraunhofer IPK" width="352" height="96" style="--h:29px" decoding="async"></li>
+        <li><img src="assets/logos/tsinghua.png" alt="Tsinghua University" width="245" height="96" style="--h:39px" decoding="async"></li>
+        <li><img src="assets/logos/roland-berger.png" alt="Roland Berger" width="202" height="96" style="--h:34px" decoding="async"></li>
+        <li><img src="assets/logos/viega.png" alt="Viega" width="235" height="96" style="--h:28px" decoding="async"></li>
+        <li><img src="assets/logos/bht.png" alt="Berliner Hochschule für Technik" width="276" height="96" style="--h:33px" decoding="async"></li>
+        <li><img src="assets/logos/hkust.png" alt="HKUST" width="306" height="96" style="--h:36px" decoding="async"></li>
+        <li><img src="assets/logos/rwth-wzl.png" alt="WZL of RWTH Aachen University" width="520" height="73" style="--h:21px" decoding="async"></li>
+        <li><img src="assets/logos/horvath.png" alt="Horváth" width="399" height="96" style="--h:27px" decoding="async"></li>
+        <li><img src="assets/logos/antler.png" alt="Antler" width="398" height="96" style="--h:26px" decoding="async"></li>
+      </ul>
+      <ul class="logos__track" aria-hidden="true">
+        <li><img src="assets/logos/rwth.png" alt="" width="355" height="96" style="--h:29px" decoding="async"></li>
+        <li><img src="assets/logos/neura.png" alt="" width="519" height="96" style="--h:24px" decoding="async"></li>
+        <li><img src="assets/logos/fraunhofer-ipk.png" alt="" width="352" height="96" style="--h:29px" decoding="async"></li>
+        <li><img src="assets/logos/tsinghua.png" alt="" width="245" height="96" style="--h:39px" decoding="async"></li>
+        <li><img src="assets/logos/roland-berger.png" alt="" width="202" height="96" style="--h:34px" decoding="async"></li>
+        <li><img src="assets/logos/viega.png" alt="" width="235" height="96" style="--h:28px" decoding="async"></li>
+        <li><img src="assets/logos/bht.png" alt="" width="276" height="96" style="--h:33px" decoding="async"></li>
+        <li><img src="assets/logos/hkust.png" alt="" width="306" height="96" style="--h:36px" decoding="async"></li>
+        <li><img src="assets/logos/rwth-wzl.png" alt="" width="520" height="73" style="--h:21px" decoding="async"></li>
+        <li><img src="assets/logos/horvath.png" alt="" width="399" height="96" style="--h:27px" decoding="async"></li>
+        <li><img src="assets/logos/antler.png" alt="" width="398" height="96" style="--h:26px" decoding="async"></li>
+      </ul>
+    </div>
+    <a class="logos__more mono" href="#team">Who did what ↓</a>
   </div>
 </section>
 
@@ -523,7 +559,7 @@
     <article class="person" data-reveal>
       <span class="person__avatar" aria-hidden="true">YT</span>
       <h3 class="h3">Yannik Trinn <small class="mono">CEO</small></h3>
-      <p>Master craftsman in metal and electrical engineering after five years at Viega. M.Sc. from RWTH Aachen and Tsinghua University. Physical AI engineering intern at NEURA Robotics, strategy at Roland Berger. Entrepreneur in Residence at Antler, full time on Proteus.</p>
+      <p>Master craftsman in metal and electrical engineering after five years at Viega. M.Sc. from RWTH Aachen and Tsinghua University, with time at RWTH WZL and HKUST. Physical AI engineering intern at NEURA Robotics, consulting at Horváth and Roland Berger. Entrepreneur in Residence at Antler, full time on Proteus.</p>
       <a class="link mono" href="https://www.linkedin.com/in/yannik-trinn/" target="_blank" rel="noopener">LinkedIn ↗</a>
     </article>
   </div>
