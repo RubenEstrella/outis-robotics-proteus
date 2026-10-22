@@ -640,3 +640,9 @@ p { margin: 0 0 1rem; }
 }
 /* keep the logo band inside the first screen on short laptop screens */
 .hero .display { font-size: min(var(--fs-display), 17vh); }
+
+/* contact: compact closing band */
+.contact__inner { padding-block: clamp(3.2rem, 2rem + 3vw, 5rem); }
+.contact__title { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.7rem, 1.2rem + 1.6vw, 2.6rem); line-height: 1.08; letter-spacing: -0.01em; margin: 0; max-width: 24ch; text-wrap: balance; }
+.contact .lead { margin-top: 1rem; font-size: 1.05rem; max-width: 56ch; }
+.contact .hero__actions { margin-top: 1.4rem; }
