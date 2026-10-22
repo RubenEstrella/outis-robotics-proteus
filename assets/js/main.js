@@ -154,3 +154,21 @@
   const io = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
   items.forEach(i => io.observe(i));
 })();
+
+// founders video: pauses when scrolled out of view, resumes when back, only if the viewer had started it
+(() => {
+  const v = document.querySelector('.founders__video');
+  if (!v || !('IntersectionObserver' in window)) return;
+  let resume = false, seen = false;
+  const play = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+  new IntersectionObserver(entries => entries.forEach(e => {
+    seen = e.intersectionRatio >= 0.5;
+    if (!seen) { if (!v.paused) { resume = true; v.pause(); } }
+    else if (resume && !document.hidden) { resume = false; play(); }
+  }), { threshold: [0, 0.5, 1] }).observe(v);
+  v.addEventListener('play', () => { resume = false; });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) { if (!v.paused) { resume = true; v.pause(); } }
+    else if (resume && seen) { resume = false; play(); }
+  });
+})();
