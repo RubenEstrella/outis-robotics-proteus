@@ -336,14 +336,14 @@
         <tbody>
           <tr><th scope="row">Keeps people out of the danger zone</th><td><span class="cap cap--no">No</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td class="is-us"><span class="cap cap--yes">Yes</span></td></tr>
           <tr><th scope="row">Crosses rubble and gaps</th><td><span class="cap cap--part">At risk</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--part">Small gaps</span></td><td><span class="cap cap--yes">Flies</span></td><td><span class="cap cap--no">No</span></td><td class="is-us"><span class="cap cap--yes">Walker, bridge</span></td></tr>
-          <tr><th scope="row">Passes a 200 to 250 mm opening</th><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--part">Small units only</span></td><td><span class="cap cap--part">Small units, no contact</span></td><td><span class="cap cap--yes">Yes</span></td><td class="is-us"><span class="cap cap--yes">As a chain</span></td></tr>
-          <tr><th scope="row">Applies force at 1 m reach behind it</th><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">Little force at reach</span></td><td class="is-us"><span class="cap cap--yes">Braced, 60 N class</span></td></tr>
+          <tr><th scope="row">Passes a 250 mm opening</th><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--part">Small units only</span></td><td><span class="cap cap--part">Small units, no contact</span></td><td><span class="cap cap--yes">Yes</span></td><td class="is-us"><span class="cap cap--yes">As a chain</span></td></tr>
+          <tr><th scope="row">Applies force at 1 m reach behind it</th><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">Little force at reach</span></td><td class="is-us"><span class="cap cap--yes">Braced, 200 N target</span></td></tr>
           <tr><th scope="row">One kit for every shape of job</th><td><span class="cap cap--none">n/a</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td class="is-us"><span class="cap cap--yes">Yes</span></td></tr>
         </tbody>
       </table>
     </div>
     <p class="matrix__hint mono">Swipe to compare all options →</p>
-    <p class="matrix__note mono">Typical commercial systems, our assessment. Proteus column: MK3 target capabilities; contact force from lab statics of the same MK1.1 modules, braced vs. as a chain.</p>
+    <p class="matrix__note mono">Typical commercial systems, our assessment. Proteus column: our Stage 1 targets; lab statics of the same MK1.1 modules give 35× the force braced vs. as a chain.</p>
   </div>
 </section>
 
@@ -486,7 +486,7 @@
     <table class="spec" data-reveal>
       <caption class="sr">Stage 1 task specification</caption>
       <tbody>
-        <tr><th scope="row" class="mono">Access</th><td>Ø200 to 250 mm side openings at 0.4 to 0.8 m height</td></tr>
+        <tr><th scope="row" class="mono">Access</th><td>Ø250 mm side openings at 0.4 to 0.8 m height</td></tr>
         <tr><th scope="row" class="mono">Equipment</th><td>A vessel, a column section and an exchanger head with changeable internals</td></tr>
         <tr><th scope="row" class="mono">Command</th><td>One per run: the unit and the task. No teleoperation</td></tr>
         <tr><th scope="row" class="mono">Task A</th><td>Retrieve a foreign object of up to 1 kg: a bolt, a hand tool, a gasket piece</td></tr>
@@ -496,9 +496,9 @@
     </table>
     <div class="targets targets--paper" data-reveal>
       <div class="target"><p class="target__value">6<span>/10</span></p><p class="target__label">complete task chains on unseen layouts</p></div>
-      <div class="target"><p class="target__value">≥10<span>×</span></p><p class="target__label">the force of the same modules as a snake, measured</p></div>
+      <div class="target"><p class="target__value">18<span>/20</span></p><p class="target__label">working positions holding the target force, in 3 load-bearing configurations</p></div>
       <div class="target"><p class="target__value">48<span>/50</span></p><p class="target__label">reconfiguration steps under load, none non-recoverable</p></div>
-      <div class="target"><p class="target__value">50<span>N</span></p><p class="target__label">and 5 N/mm at the tool, 1.0 m behind the opening</p></div>
+      <div class="target"><p class="target__value">200<span>N</span></p><p class="target__label">usable tool force, held 60 s within 5 mm, 10× a compact arm's lift load</p></div>
       <p class="targets__note mono">Our Stage 1 targets in the SPRIND Next Frontier Robotics Challenge, 13 Nov 2026 to 30 Sep 2027.</p>
     </div>
   </div>
@@ -533,12 +533,12 @@
   </div>
   <ol class="wrap stages" data-reveal>
     <li class="is-done"><p class="stages__when mono">Oct 2026 · built</p><p class="stages__what">MK1 module, powered head motion, load-bearing docks, docking test rig, utility model.</p></li>
-    <li class="is-next"><p class="stages__when mono">Stage 1 · to Sep 2027</p><p class="stages__what">From a magazine through a Ø200 mm opening as a chain, braced manipulator, measurement at 1.0 m, withdrawal. Against a snake control and the strongest commercial arm.</p></li>
+    <li class="is-next"><p class="stages__when mono">Stage 1 · to Sep 2027</p><p class="stages__what">From a magazine through a Ø250 mm opening as a chain, braced working structures holding 200 N, measurement, withdrawal. Against a snake control and a compact commercial arm.</p></li>
     <li><p class="stages__when mono">Stage 2 · to Jul 2028</p><p class="stages__what">Chain travel to the work site, mock plant and collapse sections, 5,000-cycle aging, integration on an external robot.</p></li>
-    <li><p class="stages__when mono">Stage 3 · to Mar 2029</p><p class="stages__what">The quadruped walks to the opening with double-force MK3 drives; 100 N and 10 N/mm at 1.0 m.</p></li>
-    <li><p class="stages__when mono">Stage 4 · to Dec 2029</p><p class="stages__what">The full mission by an independent lab, at least 18 of 20 complete; paid pilots; series design.</p></li>
+    <li><p class="stages__when mono">Stage 3 · to Mar 2029</p><p class="stages__what">The quadruped walks to the opening with double-force MK3 drives; 200 N kept after aging.</p></li>
+    <li><p class="stages__when mono">Stage 4 · to Dec 2029</p><p class="stages__what">The full mission by an independent lab, at least 18 of 20 complete; 200 validated configurations; paid pilots; series design.</p></li>
   </ol>
-  <p class="wrap gates mono" data-reveal><b>Gates in Stage 1</b> G0 month 2.5: test course and protocol frozen, dock pair measured · G1 month 5: the chain closes into the manipulator, at least 10× the snake's force predicted from measured docks · G2 month 10.5: targets measured, subset repeated by an outside lab.</p>
+  <p class="wrap gates mono" data-reveal><b>Gates in Stage 1</b> G0 month 2.5: test course and protocol frozen, dock pair measured · G1 month 5: the chain closes into the manipulator, at least 200 N predicted from measured docks · G2 month 10.5: targets measured, subset repeated by an outside lab.</p>
 </section>
 
 <!-- TEAM -->
