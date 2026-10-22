@@ -91,21 +91,38 @@
     film.addEventListener('ended', off);
   }
 
+  // autoplay policy: a muted loop plays only while at least half of it is on screen and the tab is visible;
+  // it pauses when scrolled away and resumes on return. Data saver or 2G: posters only, play on tap.
+  const conn = navigator.connection || {};
+  const lean = !!conn.saveData || /(^|-)2g$/.test(conn.effectiveType || '');
+  const inView = new Set();
+  const canAuto = v => !reduce && !lean && !filmOn && !v.dataset.userPaused && !document.hidden;
   if ('IntersectionObserver' in window) {
-    const near = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { load(e.target); near.unobserve(e.target); } }), { rootMargin: '400px 0px' });
+    const near = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting && !lean) { load(e.target); near.unobserve(e.target); } }), { rootMargin: '300px 0px' });
     const seen = new IntersectionObserver(entries => entries.forEach(e => {
       const v = e.target;
-      if (e.isIntersecting && e.intersectionRatio >= 0.3) { if (!reduce && !filmOn && !v.dataset.userPaused) { load(v); tryPlay(v); } }
-      else if (!v.paused) v.pause();
-    }), { threshold: [0, 0.3, 0.6] });
+      if (e.intersectionRatio >= 0.5) { inView.add(v); if (canAuto(v)) { load(v); tryPlay(v); } }
+      else { inView.delete(v); if (!v.paused) v.pause(); }
+    }), { threshold: [0, 0.5, 1] });
     clips.forEach(v => { near.observe(v); seen.observe(v); });
     if (hero) {
+      if (lean) { hero.removeAttribute('autoplay'); hero.pause(); setState(heroBtn, true); }
       const heroSeen = new IntersectionObserver(entries => entries.forEach(e => {
-        if (e.isIntersecting) { if (!reduce && !filmOn && !hero.dataset.userPaused) tryPlay(hero); }
-        else if (!hero.paused) hero.pause();
-      }), { threshold: 0.05 });
+        if (e.intersectionRatio >= 0.5) { inView.add(hero); if (canAuto(hero)) tryPlay(hero); }
+        else { inView.delete(hero); if (!hero.paused) hero.pause(); }
+      }), { threshold: [0, 0.5, 1] });
       heroSeen.observe(hero);
     }
+    if (film && filmWrap) {
+      // the film (with sound) stops once mostly scrolled away; it does not restart by itself
+      new IntersectionObserver(entries => entries.forEach(e => {
+        if (e.intersectionRatio < 0.25 && !film.paused) film.pause();
+      }), { threshold: [0, 0.25] }).observe(filmWrap);
+    }
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) { [hero, ...clips].forEach(v => v && !v.paused && v.pause()); if (film && !film.paused) film.pause(); }
+      else inView.forEach(v => { if (canAuto(v)) tryPlay(v); });
+    });
   } else {
     clips.forEach(load);
   }
