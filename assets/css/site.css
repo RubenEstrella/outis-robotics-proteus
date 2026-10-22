@@ -678,7 +678,7 @@ p { margin: 0 0 1rem; }
 @media (max-width: 760px) { .vision__grid, .vision__path { grid-template-columns: 1fr; } .facts { grid-template-columns: 1fr; } .fact { border-right: 0; padding-left: 0 !important; } }
 
 /* founders video: centered, moderate size, plays with sound on request */
-.founders { margin: clamp(2rem, 1.4rem + 2vw, 3rem) auto 0; max-width: 760px; }
+.founders { margin: clamp(2rem, 1.4rem + 2vw, 3rem) auto 0; max-width: 600px; }
 .founders__video { display: block; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; height: auto; border: 1px solid var(--line); border-radius: 6px; background: #000; }
 .founders__cap { margin-top: 0.7rem; text-align: center; color: var(--ink-3); font-size: 0.78rem; letter-spacing: 0.04em; }
 .founders + .applicant, .wrap:has(.founders) + .applicant { margin-top: 2.4rem; }
