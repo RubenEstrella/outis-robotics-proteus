@@ -49,7 +49,7 @@
   --max: 1360px;
   --gutter-l: max(16px, env(safe-area-inset-left, 0px));
   --gutter-r: max(16px, env(safe-area-inset-right, 0px));
-  --section: clamp(5rem, 3rem + 8vw, 11rem);
+  --section: clamp(3.5rem, 2rem + 4.5vw, 6.5rem);
   --nav-h: 68px;
   color-scheme: dark;
 }
@@ -174,7 +174,7 @@ p { margin: 0 0 1rem; }
 }
 
 /* sections */
-.section-head { padding-top: var(--section); padding-bottom: clamp(2.5rem, 1.5rem + 3vw, 4.5rem); }
+.section-head { padding-top: var(--section); padding-bottom: clamp(1.8rem, 1rem + 2vw, 3rem); }
 
 /* problem */
 .stakes { background: var(--bg-2); border-bottom: 1px solid var(--line); padding-bottom: var(--section); }
@@ -646,3 +646,14 @@ p { margin: 0 0 1rem; }
 .contact__title { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.7rem, 1.2rem + 1.6vw, 2.6rem); line-height: 1.08; letter-spacing: -0.01em; margin: 0; max-width: 24ch; text-wrap: balance; }
 .contact .lead { margin-top: 1rem; font-size: 1.05rem; max-width: 56ch; }
 .contact .hero__actions { margin-top: 1.4rem; }
+
+/* flatter section heads: title left, text right */
+.section-head--split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.2rem 3.5rem; align-items: end; }
+.section-head--split .h2 { margin: 0; }
+.section-head--split .lead { font-size: 1.08rem; }
+.section-head--wide .h2 { max-width: 26ch; margin-bottom: 0; }
+@media (max-width: 860px) { .section-head--split { grid-template-columns: 1fr; } }
+/* the key claim of the page */
+.h2--key { font-size: clamp(2.5rem, 1.3rem + 4.6vw, 5.6rem); max-width: 16ch; }
+.h2--key em { font-style: normal; color: var(--accent); }
+.built { padding-bottom: var(--section); }
