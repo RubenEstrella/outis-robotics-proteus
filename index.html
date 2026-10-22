@@ -19,7 +19,7 @@
 <link rel="shortcut icon" href="assets/img/favicon.ico">
 <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/media/v9-hero-1600.jpg" as="image" fetchpriority="high">
-<link rel="stylesheet" href="assets/css/site.css?v=16">
+<link rel="stylesheet" href="assets/css/site.css?v=17">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -58,7 +58,6 @@
     <div class="hero__shade" aria-hidden="true"></div>
   </div>
   <div class="wrap hero__content">
-    <p class="eyebrow">Proteus by Outis · Reconfigurable modular robots</p>
     <h1 id="hero-title" class="display">Change shape.<br>Get to work.</h1>
     <p class="lead hero__lead">Proteus is a robot made of identical modules that changes its shape during the task: a walker over rubble, a chain through a small opening, a braced structure that works with force on site. So no person has to go in first.</p>
     <div class="hero__actions">
@@ -67,8 +66,6 @@
     </div>
   </div>
   <div class="hero__foot wrap">
-    <span class="badge badge--concept">MK3 target · simulation</span>
-    <span class="hero__note mono">Rendered from our motion planner · the hardware below is real</span>
     <button class="media-toggle media-toggle--hero" type="button" data-toggle-for="hero" aria-label="Pause background video"><span aria-hidden="true"></span></button>
   </div>
   <div class="logos" role="region" aria-labelledby="logos-title">
@@ -102,7 +99,6 @@
         <li><img src="assets/logos/antler.png" alt="" width="398" height="96" style="--h:35px" decoding="async"></li>
       </ul>
     </div>
-    <a class="logos__more mono" href="#team">Who did what ↓</a>
   </div>
   </div>
 </section>
@@ -114,7 +110,7 @@
       <p class="eyebrow">01 · Built, not rendered</p>
       <h2 id="built-title" class="h2">The first module is real.</h2>
     </div>
-    <p class="lead">A printed MK1 module with two actuated heads, docks that carry load and a test rig for powered docking. Single takes on our bench, with date.</p>
+    <p class="lead">MK1 module with two actuated heads, docks that carry load and a test rig for powered docking. Single takes on our bench, with date.</p>
   </div>
   <div class="wrap built__clips">
     <figure class="clip" data-reveal>
@@ -143,12 +139,10 @@
     </figure>
   </div>
   <div class="wrap facts" data-reveal>
-    <div class="fact"><p class="fact__v">TRL&nbsp;4</p><p class="fact__l">docking interface, validated in our lab</p></div>
     <div class="fact"><p class="fact__v">588</p><p class="fact__l">ways two modules can dock: 14&nbsp;×&nbsp;14 faces, 3 orientations each</p></div>
     <div class="fact"><p class="fact__v">34</p><p class="fact__l">claims, utility model filed with the DPMA, 21 Oct 2026</p></div>
     <div class="fact"><p class="fact__v">463</p><p class="fact__l">automated tests in our 17,800-line planner</p></div>
   </div>
-  <p class="wrap built__links mono" data-reveal><a href="https://outis-robotics.com/lab/" target="_blank" rel="noopener">Lab record with test conditions ↗</a><a href="https://outis-robotics.com/demo/" target="_blank" rel="noopener">95-second demo, prototype first ↗</a></p>
 </section>
 
 <!-- PROBLEM -->
@@ -156,9 +150,9 @@
   <div class="wrap section-head section-head--split" data-reveal>
     <div>
       <p class="eyebrow">02 · The problem</p>
-      <h2 id="stakes-title" class="h2">The first look inside is still taken by a person.</h2>
+      <h2 id="stakes-title" class="h2">Someone still has to go in first.</h2>
     </div>
-    <p class="lead">Process vessels, collapsed buildings, damaged hulls: someone climbs in to find out what is there and to do the work. The robots that exist each fit one part of the job. The ones that walk don't fit through the opening; the ones that fit can't push.</p>
+    <p class="lead">Process vessels, columns, voids in collapsed buildings: today the work behind a small opening means opening the equipment or a confined-space entry with permits and a standby attendant. Tools slim enough to fit cannot apply force at reach; robots strong enough to work do not fit.</p>
   </div>
   <div class="wrap stakes__grid">
     <figure class="stake" data-reveal>
@@ -194,7 +188,7 @@
   <div class="wrap section-head" data-reveal>
     <p class="eyebrow">03 · The shift</p>
     <h2 id="shift-title" class="h2 h2--key">Every fixed-shape robot <em>fails one phase</em> of the job.</h2>
-    <p class="lead">Today a robot is built for the hardest moment of its task and keeps that shape for the whole mission. Proteus takes the strongest shape for every phase: it walks, passes the opening as a chain, braces on site and works with force, then walks back. Below, one mission to a collapsed building, to scale.</p>
+    <p class="lead">A fixed robot is built for the hardest moment of its mission and carries that shape everywhere. Proteus changes shape per phase: it walks, slips through as a chain, braces and works with force, then walks back.</p>
   </div>
 
   <figure class="wrap profile" id="profile" data-reveal>
@@ -243,7 +237,7 @@
           <circle cx="328" cy="164" r="6"/><path d="M321 230v-52q0-7 7-7t7 7v52z"/>
         </g>
         <g class="mp-barrier"><path d="M366 230V192M388 230V192"/><rect x="356" y="194" width="42" height="10" class="mp-rail-base"/><rect x="356" y="194" width="42" height="10" fill="url(#mp-hatch)" class="mp-rail"/></g>
-        <!-- robot route out (orange) and back (dashed) -->
+        <!-- robot route out and back (dashed) -->
         <path class="mp-path" d="M430 222H1038V264H1058" marker-end="url(#mp-arrow)"/>
         <path class="mp-return" d="M1048 256V212H444" marker-end="url(#mp-arrow-ret)"/>
         <g class="mp-steps">
@@ -259,12 +253,10 @@
           <text x="44" y="108">waits behind the barrier</text>
           <text x="430" y="262" text-anchor="middle">HEAP OF MODULES</text>
           <text x="640" y="172" text-anchor="middle">OPEN STREET · RUBBLE</text>
-          <text x="858" y="352" text-anchor="middle">RAVINE 0.9 m WIDE, 1.6 m DEEP</text>
-          <text x="858" y="368" text-anchor="middle">footbridge gone</text>
           <text x="1072" y="50" text-anchor="middle">COLLAPSED BUILDING</text>
           <text x="1072" y="68" text-anchor="middle">25 cm GAP IN THE SLAB</text>
           <text x="1180" y="352" text-anchor="end">CELLAR COLUMN C2</text>
-          <text x="1180" y="368" text-anchor="end" class="mp-ok">checked before anyone enters</text>
+          <text x="1180" y="368" text-anchor="end" class="mp-ok">inspect</text>
         </g>
         <path class="mp-leader" d="M1038 76V226"/>
         <path class="mp-leader" d="M1120 340H1069V278"/>
@@ -272,7 +264,6 @@
       </svg>
     </div>
     <p class="profile__hint mono" aria-hidden="true">Swipe to follow the route →</p>
-    <figcaption class="profile__note mono">Side section of the mission in the film, to scale (40&nbsp;px = 1&nbsp;m): the team stays behind the barrier; steps 1–6 are the chapters below.</figcaption>
   </figure>
 
   <div class="wrap film" id="film" data-reveal>
@@ -285,7 +276,6 @@
         <span class="film__label"><strong>Robots go first</strong><span class="mono">The mission · 1:50 · with sound</span></span>
       </button>
     </div>
-    <p class="film__meta mono"><span class="badge badge--concept">MK3 target · simulation</span><span>Blender render of our motion planner. Numbers in the film are computed statics on the exact MK1.1 kinematics.</span></p>
   </div>
 
   <div class="wrap phases">
@@ -343,7 +333,6 @@
       </table>
     </div>
     <p class="matrix__hint mono">Swipe to compare all options →</p>
-    <p class="matrix__note mono">Typical commercial systems, our assessment. Proteus column: our Stage 1 targets; computed statics of the same MK1.1 modules give 35× the force braced vs. as a chain.</p>
   </div>
 </section>
 
@@ -355,7 +344,7 @@
       <p class="eyebrow">04 · Why it works</p>
       <h2 id="physics-title" class="h2">Enter as a chain. Work as a structure.</h2>
     </div>
-    <p class="lead">In a chain, actuators about 2 cm from each joint axis hold the tool load, so force and stiffness collapse with reach. Braced, two supports about 40 cm apart hold it as a force couple and the struts carry load along their axes. Force grows with that lever ratio, stiffness with its square.</p>
+    <p class="lead">The gain is leverage. In a chain, actuators about 2 cm from each joint axis hold the tool load in bending, so force and stiffness collapse with reach. Braced, two supports about 40 cm apart hold it and the struts carry the load along their axes. Force grows with that ratio, stiffness with its square.</p>
   </div>
   <div class="wrap physics__grid">
     <figure class="loadpath" data-reveal>
@@ -368,13 +357,13 @@
         <text x="40" y="330" class="lp-t">A · CHAIN: JOINTS IN BENDING</text>
         <text x="360" y="330" class="lp-t">B · BRACED: STRUTS AXIAL</text>
       </svg>
-      <figcaption class="mono">Schematic. Orange joints carry the tool moment through actuators a few centimeters from their axis.</figcaption>
+      <figcaption class="mono">Schematic. Marked joints carry the tool moment through actuators about 2 cm from their axis.</figcaption>
     </figure>
     <div class="physics__nums" data-reveal>
       <dl class="stats stats--paper">
-        <div><dt class="mono">Tool force</dt><dd>35× <small>60.7 N braced vs. 1.7 N as a chain, same four MK1.1 modules, tool 1.0 m deep</small></dd></div>
-        <div><dt class="mono">Stiffness</dt><dd>560× <small>15.7 N/mm braced; 15× and 117× even against two parallel chains</small></dd></div>
-        <div><dt class="mono">Limit we report</dt><dd>1.1× <small>out of the plane of both supports; a second wall foot makes a spatial truss</small></dd></div>
+        <div><dt class="mono">Tool force</dt><dd>35× <small>braced vs. as a chain, same four MK1.1 modules, tool 1.0 m deep; computed statics, not a measurement</small></dd></div>
+        <div><dt class="mono">Stiffness</dt><dd>560× <small>braced vs. as a chain in the same computed statics; docks assumed rigid</small></dd></div>
+        <div><dt class="mono">Stage 1 target</dt><dd>200 N <small>held 60 s within 5 mm at 18 of 20 working positions, at most 6 kg of modules; 10× the lift load of a compact arm (Reach Alpha 5, 19.6 N)</small></dd></div>
       </dl>
     </div>
   </div>
@@ -480,7 +469,7 @@
       <p class="eyebrow">06 · First job</p>
       <h2 id="fj-title" class="h2">We start where the access is defined.</h2>
     </div>
-    <p class="lead">Retrieving and placing objects without human entry. Stage 1 proves it in a guarded mock plant hall: today such work means opening the equipment or a confined-space entry with permits and a standby attendant.</p>
+    <p class="lead">Retrieving and placing objects without human entry in hazardous, confined or unstructured spaces. Stage 1 tests it in a guarded mock plant hall with three equipment mock-ups; Stage 2 moves the task family onto real equipment with a plant partner.</p>
   </div>
   <div class="wrap fj__grid">
     <table class="spec" data-reveal>
@@ -497,7 +486,7 @@
     <div class="targets targets--paper" data-reveal>
       <div class="target"><p class="target__value">6<span>/10</span></p><p class="target__label">complete task chains on unseen layouts</p></div>
       <div class="target"><p class="target__value">18<span>/20</span></p><p class="target__label">working positions holding the target force, in 3 load-bearing configurations</p></div>
-      <div class="target"><p class="target__value">48<span>/50</span></p><p class="target__label">reconfiguration steps under load, none non-recoverable</p></div>
+      <div class="target"><p class="target__value">200</p><p class="target__label">physically validated configurations from one module family, the Challenge target</p></div>
       <div class="target"><p class="target__value">200<span>N</span></p><p class="target__label">usable tool force, held 60 s within 5 mm, 10× a compact arm's lift load</p></div>
       <p class="targets__note mono">Our Stage 1 targets in the SPRIND Next Frontier Robotics Challenge, 13 Nov 2026 to 30 Sep 2027.</p>
     </div>
@@ -511,7 +500,7 @@
     <article class="theater" data-reveal>
       <p class="theater__step mono">Next</p>
       <h3 class="h3">Civil protection and rescue</h3>
-      <p>Check collapsed structures and voids before anyone enters. The first look costs a module, not a rescuer.</p>
+      <p>Inspect collapsed structures and voids before anyone enters. The first look costs a module, not a rescuer.</p>
     </article>
     <article class="theater" data-reveal>
       <p class="theater__step mono">Dual-use</p>
@@ -521,24 +510,29 @@
   </div>
 </section>
 
-<!-- ROADMAP -->
-<section class="roadmap-sec" id="roadmap" aria-labelledby="rm-title">
+
+<!-- MISSION AND VISION -->
+<section class="vision" id="vision" aria-labelledby="vision-title">
   <span id="progress" aria-hidden="true"></span>
-  <div class="wrap section-head section-head--split" data-reveal>
-    <div>
-      <p class="eyebrow">07 · Plan</p>
-      <h2 id="rm-title" class="h2">From one module to the full mission.</h2>
-    </div>
-    <p class="lead">The final demonstration: an independent lab runs the whole mission on a course it sets up. Magazine, quadruped, chain through the opening, manipulator on site, measurement, return. Every stage adds one part of it.</p>
+  <div class="wrap section-head" data-reveal>
+    <p class="eyebrow">07 · Mission and vision</p>
+    <h2 id="vision-title" class="h2 vision__title">Robots that bring their own structure.</h2>
   </div>
-  <ol class="wrap stages" data-reveal>
-    <li class="is-done"><p class="stages__when mono">Oct 2026 · built</p><p class="stages__what">MK1 module, powered head motion, load-bearing docks, docking test rig, utility model.</p></li>
-    <li class="is-next"><p class="stages__when mono">Stage 1 · to Sep 2027</p><p class="stages__what">From a magazine through a Ø250 mm opening as a chain, braced working structures holding 200 N, measurement, withdrawal. Against a snake control and a compact commercial arm.</p></li>
-    <li><p class="stages__when mono">Stage 2 · to Jul 2028</p><p class="stages__what">Chain travel to the work site, mock plant and collapse sections, 5,000-cycle aging, integration on an external robot.</p></li>
-    <li><p class="stages__when mono">Stage 3 · to Mar 2029</p><p class="stages__what">The quadruped walks to the opening with double-force MK3 drives; 200 N kept after aging.</p></li>
-    <li><p class="stages__when mono">Stage 4 · to Dec 2029</p><p class="stages__what">The full mission by an independent lab, at least 18 of 20 complete; 200 validated configurations; paid pilots; series design.</p></li>
+  <div class="wrap vision__grid">
+    <article class="vision__item" data-reveal>
+      <p class="vision__label mono">Mission</p>
+      <p class="vision__text">Nobody should have to go first into a space a robot could enter. We build modular robots that pass the opening, take the shape the task needs and work with real force behind it.</p>
+    </article>
+    <article class="vision__item" data-reveal>
+      <p class="vision__label mono">Vision</p>
+      <p class="vision__text">One module family that becomes a walker, a chain, a bridge or a braced arm on site. A fleet that takes the next job instead of idling like a specialist, built in Europe.</p>
+    </article>
+  </div>
+  <ol class="wrap vision__path mono" data-reveal>
+    <li><b>2027</b> 200 N behind a Ø250 mm opening, on our rig</li>
+    <li><b>2028</b> plant and collapse sections, integration on external robots</li>
+    <li><b>2029</b> the full mission, run by an independent lab</li>
   </ol>
-  <p class="wrap gates mono" data-reveal><b>Gates in Stage 1</b> G0 month 2.5: test course and protocol frozen, dock pair measured · G1 month 5: the chain closes into the manipulator, at least 200 N predicted from measured docks · G2 month 10.5: targets measured, subset repeated by an outside lab.</p>
 </section>
 
 <!-- TEAM -->
@@ -581,7 +575,7 @@
 <footer class="foot">
   <div class="wrap foot__inner">
     <p class="foot__brand"><svg class="foot__mark" viewBox="60 30 560 630" aria-hidden="true"><path d="M 387 282 L 381 286 L 345 332 L 340 342 L 338 349 L 338 366 L 343 379 L 349 388 L 357 397 L 378 416 L 412 442 L 387 413 L 373 393 L 363 374 L 359 361 L 359 346 L 363 332 L 372 313 L 394 280 Z M 261 280 L 286 311 L 296 327 L 304 344 L 307 357 L 306 369 L 300 386 L 286 411 L 267 439 L 269 439 L 277 436 L 317 388 L 322 380 L 327 368 L 328 352 L 326 344 L 321 334 L 310 321 Z M 453 139 L 420 139 L 419 140 L 410 140 L 409 141 L 389 143 L 355 151 L 312 167 L 276 185 L 240 208 L 219 224 L 192 248 L 164 278 L 153 292 L 136 317 L 121 345 L 108 380 L 105 397 L 104 398 L 103 415 L 102 416 L 102 429 L 103 430 L 104 445 L 112 470 L 124 490 L 141 507 L 150 513 L 176 526 L 182 533 L 183 536 L 183 546 L 177 562 L 170 573 L 167 580 L 152 602 L 151 605 L 125 640 L 142 621 L 206 543 L 230 511 L 265 460 L 265 459 L 262 461 L 254 463 L 239 482 L 220 501 L 213 506 L 198 512 L 181 512 L 165 507 L 154 501 L 145 494 L 133 481 L 126 470 L 118 451 L 115 438 L 115 432 L 114 431 L 114 410 L 115 409 L 115 401 L 116 400 L 118 386 L 126 361 L 139 333 L 151 313 L 174 282 L 200 254 L 233 225 L 275 196 L 313 176 L 355 160 L 383 153 L 388 153 L 401 150 L 419 149 L 420 148 L 443 148 Z M 551 47 L 520 86 L 518 90 L 507 103 L 478 142 L 397 259 L 408 255 L 426 230 L 447 204 L 460 191 L 475 181 L 485 178 L 500 178 L 516 183 L 530 191 L 542 201 L 553 214 L 564 233 L 571 256 L 572 271 L 573 272 L 573 282 L 572 283 L 572 293 L 571 294 L 570 306 L 562 334 L 556 349 L 545 371 L 534 389 L 511 420 L 499 434 L 478 455 L 461 470 L 440 486 L 419 500 L 398 512 L 368 526 L 330 539 L 304 545 L 292 546 L 291 547 L 283 547 L 282 548 L 270 548 L 269 549 L 236 548 L 228 553 L 224 557 L 265 558 L 266 557 L 279 557 L 280 556 L 296 555 L 307 552 L 312 552 L 352 541 L 355 539 L 360 538 L 380 530 L 407 517 L 446 493 L 478 468 L 514 432 L 528 415 L 547 388 L 559 367 L 559 365 L 561 363 L 562 359 L 568 348 L 579 317 L 579 313 L 583 298 L 583 291 L 584 290 L 584 261 L 583 260 L 583 253 L 577 231 L 570 216 L 563 205 L 546 187 L 538 181 L 508 165 L 501 155 L 500 146 L 505 127 L 519 97 L 537 67 Z" fill="currentColor" fill-rule="evenodd"/></svg><span><strong>PROTEUS</strong> by Outis · Berlin</span></p>
-    <p class="foot__links mono"><a href="impressum.html">Impressum</a> · <a href="privacy.html">Datenschutz</a> · <a href="https://outis-robotics.com/lab/" target="_blank" rel="noopener">Lab record</a> · © 2026 Outis</p>
+    <p class="foot__links mono"><a href="impressum.html">Legal notice</a> · <a href="privacy.html">Privacy</a> · <a href="https://outis-robotics.com/lab/" target="_blank" rel="noopener">Lab record</a> · © 2026 Outis</p>
     <p class="fineprint mono">Films are renderings of our motion planner and show MK3 target capabilities. Numbers are computed statics on the exact MK1.1 CAD kinematics with rigid docks, not measurements. Prototype clips are single takes of MK1 hardware. Payloads are sensors, tools and supplies; Proteus is not integrated into weapons, munitions or fire control. Targets are not results.</p>
   </div>
 </footer>
