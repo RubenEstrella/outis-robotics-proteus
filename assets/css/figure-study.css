@@ -95,6 +95,7 @@ body { line-height: 1.65; }
 .stakes {
   border-bottom: 0;
   background:
+    linear-gradient(180deg, #101110, transparent 120px, transparent calc(100% - 120px), #101110),
     radial-gradient(ellipse at 10% 55%, rgba(166, 174, 186, .14), transparent 65%),
     linear-gradient(180deg, #101110, #191b1c 48%, #101110);
 }
@@ -104,7 +105,9 @@ body { line-height: 1.65; }
 .stake__src { color: #b5beac; font-size: .65rem; }
 .stakes__punch { font-weight: 400; font-stretch: 100%; letter-spacing: -.04em; max-width: 30ch; }
 .mission {
+  border-top: 0;
   background:
+    linear-gradient(180deg, #101110, transparent 120px),
     radial-gradient(ellipse at 85% 0%, rgba(166, 174, 186, .1), transparent 32%),
     #101110;
 }
@@ -180,6 +183,7 @@ body { line-height: 1.65; }
 .contact {
   border-top: 0;
   background:
+    linear-gradient(0deg, #070708, transparent 120px),
     radial-gradient(ellipse at 12% 105%, rgba(192, 199, 212, .24), transparent 65%),
     #070708;
 }
@@ -187,7 +191,7 @@ body { line-height: 1.65; }
 .contact__title { font-size: clamp(2.5rem, 5.7vw, 6rem); max-width: 18ch; }
 .contact .lead { max-width: 55ch; margin-top: 32px; }
 .contact .hero__actions { margin-top: 36px; }
-.foot { padding-block: 44px; background: #070708; }
+.foot { padding-block: 44px; background: #070708; border-top: 0; }
 .foot__inner { grid-template-columns: 1fr auto; align-items: center; gap: 24px; }
 .fineprint { grid-column: 1 / -1; font-size: .6rem; }
 @media (min-width: 981px) and (max-width: 1120px) { .brand__by { display: none; } .nav__inner { gap: 20px; } }
