@@ -15,9 +15,9 @@ Reading order: hero → problem → mission film and three key capabilities → 
 status and prototype evidence and
 team-background logos → module → physics → applications and Stage 1 specifications
 → mission and vision → founders film and biographies → contact. The route diagram
-follows the mission phases. Three further mission clips, the robot comparison and
-Stage 1 specifications/targets are available in native, keyboard-accessible
-disclosures. Mission and vision share one concise statement. The contact action
+follows the mission phases. Three further mission clips are available in a native, keyboard-accessible
+disclosure. The robot comparison is always visible; the detailed Stage 1
+specifications and targets block has been removed. Mission and vision share one concise statement. The contact action
 opens an email about a pilot application. All original media are retained.
 
 Force claims in section 05 are grounded in the Track 2 Metric 1 table and
