@@ -1,5 +1,24 @@
 # Proteus website, option 9 "CHANGE SHAPE. GET TO WORK." (final candidate)
 
+## Figure-inspired design study
+
+Local styling experiment in `assets/css/figure-study.css`, loaded after the original
+stylesheet in `index.html`. The study uses lighter typography, a full-screen hero,
+an editorial grid, off-white evidence sections and muted olive backgrounds. All
+media and fonts remain self-hosted Proteus assets. Navigation and hero copy are
+shortened; evidence labels and technical content are retained.
+
+To return to the original styling, remove the `figure-study.css` stylesheet link.
+The study has not been pushed or deployed.
+
+Reading order: hero → problem → mission film and phases → prototype evidence and
+team-background logos → module → physics → applications and Stage 1 specifications
+→ mission and vision → founders film and biographies → contact. The route diagram
+follows the mission phases. Reordering retains all existing content and media.
+
+Preview from this directory with `npx vite --host 127.0.0.1 --port 4173` (Vite
+provides HTTP range requests for video seeking).
+
 Final combination (22 Oct 2026): v8 film and mission story, real hardware first, sourced problem, the shift, physics, the module, Stage 1 first job, plan, team. Dark story sections, light evidence sections. Built to replace the outis-robotics.com home page; /lab/ and /demo/ stay as they are. Static site: no build step, no cookies, no tracking, no third-party requests. Fonts are self-hosted.
 
 | Path | Content |

@@ -6,7 +6,7 @@
 <title>PROTEUS by Outis · Change shape. Get to work.</title>
 <meta name="description" content="Proteus is a robot made of identical modules that changes its shape during the task: a walker over rubble, a chain through a small opening, a braced structure that works with force on site. Nobody has to go in first.">
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#070708">
+<meta name="theme-color" content="#101110">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PROTEUS by Outis">
 <meta property="og:title" content="PROTEUS · Change shape. Get to work.">
@@ -20,6 +20,7 @@
 <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/media/v9-hero-1600.jpg" as="image" fetchpriority="high">
 <link rel="stylesheet" href="assets/css/site.css?v=19">
+<link rel="stylesheet" href="assets/css/figure-study.css?v=1">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -32,14 +33,13 @@
       <span class="brand__word">Proteus</span><span class="brand__by">by Outis</span>
     </a>
     <nav class="nav__links" id="menu" aria-label="Main">
+      <a href="#shift">In motion</a>
       <a href="#built">Hardware</a>
-      <a href="#shift">The shift</a>
-      <a href="#physics">Physics</a>
-      <a href="#module">The module</a>
-      <a href="#first-job">First job</a>
-      <a href="#team">Team</a>
+      <a href="#module">Technology</a>
+      <a href="#first-job">Applications</a>
+      <a href="#team">Company</a>
     </nav>
-    <a class="btn btn--accent btn--small nav__cta" href="mailto:yannik.trinn@outis-robotics.com?subject=Proteus">Talk to us</a>
+    <a class="btn btn--accent btn--small nav__cta" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
     <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
       <span class="sr">Menu</span><span class="nav__bars" aria-hidden="true"></span>
     </button>
@@ -58,90 +58,18 @@
     <div class="hero__shade" aria-hidden="true"></div>
   </div>
   <div class="wrap hero__content">
+    <p class="hero__eyebrow mono">Outis Robotics / Proteus</p>
     <h1 id="hero-title" class="display">Change shape.<br>Get to work.</h1>
-    <p class="lead hero__lead">Proteus is a robot made of identical modules that changes its shape during the task: a walker over rubble, a chain through a small opening, a braced structure that works with force on site. So no person has to go in first.</p>
+    <p class="lead hero__lead">One robot. The shape the task needs.<br>Modular robotics for the places people shouldn't have to go.</p>
     <div class="hero__actions">
       <a class="btn btn--accent" href="#film" data-play-film><span class="btn__play" aria-hidden="true"></span>Watch the mission</a>
       <a class="btn btn--ghost" href="#built">See the real hardware</a>
     </div>
   </div>
   <div class="hero__foot wrap">
+    <a class="hero__discover mono" href="#problem">Discover Proteus <span aria-hidden="true">↓</span></a>
+    <span class="hero__evidence mono">Motion planner simulation</span>
     <button class="media-toggle media-toggle--hero" type="button" data-toggle-for="hero" aria-label="Pause background video"><span aria-hidden="true"></span></button>
-  </div>
-  <div class="logos" role="region" aria-labelledby="logos-title">
-    <div class="wrap logos__inner">
-    <p class="logos__label mono" id="logos-title">Built by<span>engineers from</span></p>
-    <div class="logos__viewport">
-      <ul class="logos__track">
-        <li><img src="assets/logos/rwth.png" alt="RWTH Aachen University" width="355" height="96" style="--h:39px" decoding="async"></li>
-        <li><img src="assets/logos/neura.png" alt="NEURA Robotics" width="519" height="96" style="--h:32px" decoding="async"></li>
-        <li><img src="assets/logos/fraunhofer-ipk.png" alt="Fraunhofer IPK" width="352" height="96" style="--h:39px" decoding="async"></li>
-        <li><img src="assets/logos/tsinghua.png" alt="Tsinghua University" width="245" height="96" style="--h:53px" decoding="async"></li>
-        <li><img src="assets/logos/roland-berger.png" alt="Roland Berger" width="202" height="96" style="--h:46px" decoding="async"></li>
-        <li><img src="assets/logos/viega.png" alt="Viega" width="235" height="96" style="--h:38px" decoding="async"></li>
-        <li><img src="assets/logos/bht.png" alt="Berliner Hochschule für Technik" width="276" height="96" style="--h:45px" decoding="async"></li>
-        <li><img src="assets/logos/hkust.png" alt="HKUST" width="306" height="96" style="--h:49px" decoding="async"></li>
-        <li><img src="assets/logos/rwth-wzl.png" alt="WZL of RWTH Aachen University" width="520" height="73" style="--h:28px" decoding="async"></li>
-        <li><img src="assets/logos/horvath.png" alt="Horváth" width="399" height="96" style="--h:36px" decoding="async"></li>
-        <li><img src="assets/logos/antler.png" alt="Antler" width="398" height="96" style="--h:35px" decoding="async"></li>
-      </ul>
-      <ul class="logos__track" aria-hidden="true">
-        <li><img src="assets/logos/rwth.png" alt="" width="355" height="96" style="--h:39px" decoding="async"></li>
-        <li><img src="assets/logos/neura.png" alt="" width="519" height="96" style="--h:32px" decoding="async"></li>
-        <li><img src="assets/logos/fraunhofer-ipk.png" alt="" width="352" height="96" style="--h:39px" decoding="async"></li>
-        <li><img src="assets/logos/tsinghua.png" alt="" width="245" height="96" style="--h:53px" decoding="async"></li>
-        <li><img src="assets/logos/roland-berger.png" alt="" width="202" height="96" style="--h:46px" decoding="async"></li>
-        <li><img src="assets/logos/viega.png" alt="" width="235" height="96" style="--h:38px" decoding="async"></li>
-        <li><img src="assets/logos/bht.png" alt="" width="276" height="96" style="--h:45px" decoding="async"></li>
-        <li><img src="assets/logos/hkust.png" alt="" width="306" height="96" style="--h:49px" decoding="async"></li>
-        <li><img src="assets/logos/rwth-wzl.png" alt="" width="520" height="73" style="--h:28px" decoding="async"></li>
-        <li><img src="assets/logos/horvath.png" alt="" width="399" height="96" style="--h:36px" decoding="async"></li>
-        <li><img src="assets/logos/antler.png" alt="" width="398" height="96" style="--h:35px" decoding="async"></li>
-      </ul>
-    </div>
-  </div>
-  </div>
-</section>
-
-<!-- BUILT -->
-<section class="paper built" id="built" aria-labelledby="built-title">
-  <div class="wrap built__head" data-reveal>
-    <div>
-      <p class="eyebrow">01 · Built, not rendered</p>
-      <h2 id="built-title" class="h2">The first module is real.</h2>
-    </div>
-    <p class="lead">MK1 module with two actuated heads, docks that carry load and a test rig for powered docking. Single takes on our bench, with date.</p>
-  </div>
-  <div class="wrap built__clips">
-    <figure class="clip" data-reveal>
-      <div class="clip__media">
-        <video muted loop playsinline preload="none" poster="assets/media/lab-hang.jpg" data-src="assets/media/lab-hang.mp4" aria-label="Prototype: docked parts hang from a single dock."></video>
-        <span class="badge badge--proto">Prototype</span>
-        <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
-      </div>
-      <figcaption><strong>Docks that carry load</strong><span class="mono">Load-bearing since 4 Oct 2026 · the docked parts hang from one dock · take of 8 Oct</span></figcaption>
-    </figure>
-    <figure class="clip" data-reveal>
-      <div class="clip__media">
-        <video muted loop playsinline preload="none" poster="assets/media/prototype-latch.jpg" data-src="assets/media/prototype-latch.mp4" aria-label="Prototype: two printed faces are brought together and latch."></video>
-        <span class="badge badge--proto">Prototype</span>
-        <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
-      </div>
-      <figcaption><strong>The latch, up close</strong><span class="mono">9 Oct 2026 · two faces latched by hand</span></figcaption>
-    </figure>
-    <figure class="clip" data-reveal>
-      <div class="clip__media">
-        <video muted loop playsinline preload="none" poster="assets/media/lab-powered.jpg" data-src="assets/media/lab-powered.mp4" aria-label="Prototype: the module tilts and extends its head with its own linear actuators."></video>
-        <span class="badge badge--proto">Prototype</span>
-        <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
-      </div>
-      <figcaption><strong>Moves under its own power</strong><span class="mono">Powered since 16 Oct 2026 · head tilt and extension by its six actuators · take of 20 Oct</span></figcaption>
-    </figure>
-  </div>
-  <div class="wrap facts" data-reveal>
-    <div class="fact"><p class="fact__v">588</p><p class="fact__l">ways two modules can dock: 14&nbsp;×&nbsp;14 faces, 3 orientations each</p></div>
-    <div class="fact"><p class="fact__v">34</p><p class="fact__l">claims, utility model filed with the DPMA, 21 Oct 2026</p></div>
-    <div class="fact"><p class="fact__v">463</p><p class="fact__l">automated tests in our 17,800-line planner</p></div>
   </div>
 </section>
 
@@ -149,7 +77,7 @@
 <section class="stakes" id="problem" aria-labelledby="stakes-title">
   <div class="wrap section-head section-head--split" data-reveal>
     <div>
-      <p class="eyebrow">02 · The problem</p>
+      <p class="eyebrow">01 · The problem</p>
       <h2 id="stakes-title" class="h2">Someone still has to go in first.</h2>
     </div>
     <p class="lead">Process vessels, columns, voids in collapsed buildings: today the work behind a small opening means opening the equipment or a confined-space entry with permits and a standby attendant. Tools slim enough to fit cannot apply force at reach; robots strong enough to work do not fit.</p>
@@ -186,9 +114,60 @@
 <section class="mission" id="shift" aria-labelledby="shift-title">
   <span id="mission" aria-hidden="true"></span>
   <div class="wrap section-head" data-reveal>
-    <p class="eyebrow">03 · The shift</p>
+    <p class="eyebrow">02 · The shift</p>
     <h2 id="shift-title" class="h2 h2--key">Every fixed-shape robot <em>fails one phase</em> of the job.</h2>
     <p class="lead">A fixed robot is built for the hardest moment of its mission and carries that shape everywhere. Proteus changes shape per phase: it walks, slips through as a chain, braces and works with force, then walks back.</p>
+  </div>
+
+  <div class="wrap film" id="film" data-reveal>
+    <div class="film__frame">
+      <video class="film__video" data-film controls playsinline preload="none" poster="assets/media/v8-film.jpg" aria-label="Film: robot modules check a collapsed building's cellar column before rescuers enter.">
+        <source src="assets/media/v8-film.mp4" type="video/mp4">
+      </video>
+      <button class="film__play" type="button" data-film-play aria-label="Play the film with sound">
+        <span class="film__icon" aria-hidden="true"></span>
+        <span class="film__label"><strong>Robots go first</strong><span class="mono">The mission · 1:50 · with sound</span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="wrap phases">
+    <article class="phase" data-reveal>
+      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-01-dropoff.jpg" data-src="assets/media/v8-01-dropoff.mp4" aria-label="Simulation: a heap of modules assembles into a walker at the barrier."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
+      <p class="phase__tag mono"><span>1</span>Self-assembly</p>
+      <h3 class="phase__title">A crate, not a crew.</h3>
+      <p>The modules arrive as a heap at the barrier, dock and stand up as a walker.</p>
+    </article>
+    <article class="phase" data-reveal>
+      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-02-rubble.jpg" data-src="assets/media/v8-02-rubble.mp4" aria-label="Simulation: the walker carries the sensor over rubble."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
+      <p class="phase__tag mono"><span>2</span>Walker</p>
+      <h3 class="phase__title">Walks where wheels stop.</h3>
+      <p>Carries the sensor over rubble. Nobody crosses the open street.</p>
+    </article>
+    <article class="phase" data-reveal>
+      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-03-ravine.jpg" data-src="assets/media/v8-03-ravine.mp4" aria-label="Simulation: the walker becomes a bridge over a ravine."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
+      <p class="phase__tag mono"><span>3</span>Bridge</p>
+      <h3 class="phase__title">Brings its own bridge.</h3>
+      <p>Computed statics: 30 modules over a 1.0 m gap, 92–96 N peak rod force while a 1 kg case crosses.</p>
+    </article>
+    <article class="phase" data-reveal>
+      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-04-gap.jpg" data-src="assets/media/v8-04-gap.mp4" aria-label="Simulation: a chain of modules lowers the sensor through a narrow gap into the cellar."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
+      <p class="phase__tag mono"><span>4</span>Chain</p>
+      <h3 class="phase__title">25 cm is enough.</h3>
+      <p>Part of the walker anchors at the slab; a chain carries the sensor down.</p>
+    </article>
+    <article class="phase" data-reveal>
+      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-05-column.jpg" data-src="assets/media/v8-05-column.mp4" aria-label="Simulation: the chain braces into a triangle and presses the sensor onto a cracked column."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
+      <p class="phase__tag mono"><span>5</span>Braced manipulator</p>
+      <h3 class="phase__title">A measurement, not a guess.</h3>
+      <p>Braced against floor and column, it presses the ultrasonic sensor on with force a snake cannot give.</p>
+    </article>
+    <article class="phase" data-reveal>
+      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-06-return.jpg" data-src="assets/media/v8-06-return.mp4" aria-label="Simulation: the modules withdraw and walk back."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
+      <p class="phase__tag mono"><span>6</span>Walker again</p>
+      <h3 class="phase__title">The team goes in knowing.</h3>
+      <p>Back through the gap, re-form, walk out. Next job, next shape.</p>
+    </article>
   </div>
 
   <figure class="wrap profile" id="profile" data-reveal>
@@ -266,57 +245,6 @@
     <p class="profile__hint mono" aria-hidden="true">Swipe to follow the route →</p>
   </figure>
 
-  <div class="wrap film" id="film" data-reveal>
-    <div class="film__frame">
-      <video class="film__video" data-film controls playsinline preload="none" poster="assets/media/v8-film.jpg" aria-label="Film: robot modules check a collapsed building's cellar column before rescuers enter.">
-        <source src="assets/media/v8-film.mp4" type="video/mp4">
-      </video>
-      <button class="film__play" type="button" data-film-play aria-label="Play the film with sound">
-        <span class="film__icon" aria-hidden="true"></span>
-        <span class="film__label"><strong>Robots go first</strong><span class="mono">The mission · 1:50 · with sound</span></span>
-      </button>
-    </div>
-  </div>
-
-  <div class="wrap phases">
-    <article class="phase" data-reveal>
-      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-01-dropoff.jpg" data-src="assets/media/v8-01-dropoff.mp4" aria-label="Simulation: a heap of modules assembles into a walker at the barrier."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
-      <p class="phase__tag mono"><span>1</span>Self-assembly</p>
-      <h3 class="phase__title">A crate, not a crew.</h3>
-      <p>The modules arrive as a heap at the barrier, dock and stand up as a walker.</p>
-    </article>
-    <article class="phase" data-reveal>
-      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-02-rubble.jpg" data-src="assets/media/v8-02-rubble.mp4" aria-label="Simulation: the walker carries the sensor over rubble."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
-      <p class="phase__tag mono"><span>2</span>Walker</p>
-      <h3 class="phase__title">Walks where wheels stop.</h3>
-      <p>Carries the sensor over rubble. Nobody crosses the open street.</p>
-    </article>
-    <article class="phase" data-reveal>
-      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-03-ravine.jpg" data-src="assets/media/v8-03-ravine.mp4" aria-label="Simulation: the walker becomes a bridge over a ravine."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
-      <p class="phase__tag mono"><span>3</span>Bridge</p>
-      <h3 class="phase__title">Brings its own bridge.</h3>
-      <p>Computed statics: 30 modules over a 1.0 m gap, 92–96 N peak rod force while a 1 kg case crosses.</p>
-    </article>
-    <article class="phase" data-reveal>
-      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-04-gap.jpg" data-src="assets/media/v8-04-gap.mp4" aria-label="Simulation: a chain of modules lowers the sensor through a narrow gap into the cellar."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
-      <p class="phase__tag mono"><span>4</span>Chain</p>
-      <h3 class="phase__title">25 cm is enough.</h3>
-      <p>Part of the walker anchors at the slab; a chain carries the sensor down.</p>
-    </article>
-    <article class="phase" data-reveal>
-      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-05-column.jpg" data-src="assets/media/v8-05-column.mp4" aria-label="Simulation: the chain braces into a triangle and presses the sensor onto a cracked column."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
-      <p class="phase__tag mono"><span>5</span>Braced manipulator</p>
-      <h3 class="phase__title">A measurement, not a guess.</h3>
-      <p>Braced against floor and column, it presses the ultrasonic sensor on with force a snake cannot give.</p>
-    </article>
-    <article class="phase" data-reveal>
-      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-06-return.jpg" data-src="assets/media/v8-06-return.mp4" aria-label="Simulation: the modules withdraw and walk back."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
-      <p class="phase__tag mono"><span>6</span>Walker again</p>
-      <h3 class="phase__title">The team goes in knowing.</h3>
-      <p>Back through the gap, re-form, walk out. Next job, next shape.</p>
-    </article>
-  </div>
-
   <div class="wrap shift__matrix" data-reveal>
     <h3 class="h3">Which robot gets the whole job done?</h3>
     <div class="matrix-scroll" role="region" aria-label="Capability comparison" tabindex="0">
@@ -336,44 +264,88 @@
   </div>
 </section>
 
-<!-- PHYSICS -->
-<section class="paper physics" id="physics" aria-labelledby="physics-title">
-  <span id="how" aria-hidden="true"></span>
-  <div class="wrap section-head section-head--split" data-reveal>
+<!-- BUILT -->
+<section class="paper built" id="built" aria-labelledby="built-title">
+  <div class="wrap built__head" data-reveal>
     <div>
-      <p class="eyebrow">04 · Why it works</p>
-      <h2 id="physics-title" class="h2">Enter as a chain. Work as a structure.</h2>
+      <p class="eyebrow">03 · Built, not rendered</p>
+      <h2 id="built-title" class="h2">The first module is real.</h2>
     </div>
-    <p class="lead">The gain is leverage. In a chain, actuators about 2 cm from each joint axis hold the tool load in bending, so force and stiffness collapse with reach. Braced, two supports about 40 cm apart hold it and the struts carry the load along their axes. Force grows with that ratio, stiffness with its square.</p>
+    <p class="lead">MK1 module with two actuated heads, docks that carry load and a test rig for powered docking. Single takes on our bench, with date.</p>
   </div>
-  <div class="wrap physics__grid">
-    <figure class="loadpath" data-reveal>
-      <svg viewBox="0 0 640 340" role="img" aria-labelledby="lp-title">
-        <title id="lp-title">Load paths: A, a chain carries the tool load in bending at every joint; B, the same modules braced on the rim and a wall carry it axially.</title>
-        <defs><marker id="lp-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 9 5 0 9z" class="lp-ah"/></marker></defs>
-        <g class="lp-wall"><path d="M40 40H280M360 40H600"/><path d="M60 40l-10-10M100 40l-10-10M140 40l-10-10M180 40l-10-10M220 40l-10-10M260 40l-10-10M380 40l-10-10M420 40l-10-10M460 40l-10-10M500 40l-10-10M540 40l-10-10M580 40l-10-10"/><path d="M600 130V300M600 150l10 10M600 190l10 10M600 230l10 10M600 270l10 10"/></g>
-        <g class="lp-chain"><path d="M160 40 148 122 170 204 150 270"/><path d="M150 272v34" class="lp-load" marker-end="url(#lp-a)"/><circle cx="160" cy="40" r="7"/><circle cx="148" cy="122" r="7" class="lp-hot"/><circle cx="170" cy="204" r="7" class="lp-hot"/><circle cx="150" cy="270" r="7" class="lp-hot"/></g>
-        <g class="lp-truss"><path d="M470 40 410 150 500 250 470 40M500 250 600 215"/><path d="M500 252v34" class="lp-load" marker-end="url(#lp-a)"/><circle cx="470" cy="40" r="7"/><circle cx="410" cy="150" r="7"/><circle cx="500" cy="250" r="7"/><circle cx="600" cy="215" r="7"/></g>
-        <text x="40" y="330" class="lp-t">A · CHAIN: JOINTS IN BENDING</text>
-        <text x="360" y="330" class="lp-t">B · BRACED: STRUTS AXIAL</text>
-      </svg>
-      <figcaption class="mono">Schematic. Marked joints carry the tool moment through actuators about 2 cm from their axis.</figcaption>
+  <div class="wrap built__clips">
+    <figure class="clip" data-reveal>
+      <div class="clip__media">
+        <video muted loop playsinline preload="none" poster="assets/media/lab-hang.jpg" data-src="assets/media/lab-hang.mp4" aria-label="Prototype: docked parts hang from a single dock."></video>
+        <span class="badge badge--proto">Prototype</span>
+        <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
+      </div>
+      <figcaption><strong>Docks that carry load</strong><span class="mono">Load-bearing since 4 Oct 2026 · the docked parts hang from one dock · take of 8 Oct</span></figcaption>
     </figure>
-    <div class="physics__nums" data-reveal>
-      <dl class="stats stats--paper">
-        <div><dt class="mono">Tool force</dt><dd>35× <small>braced vs. as a chain, same four MK1.1 modules, tool 1.0 m deep; computed statics, not a measurement</small></dd></div>
-        <div><dt class="mono">Stiffness</dt><dd>560× <small>braced vs. as a chain in the same computed statics; docks assumed rigid</small></dd></div>
-        <div><dt class="mono">Stage 1 target</dt><dd>200 N <small>held 60 s within 5 mm at 18 of 20 working positions, at most 6 kg of modules; 10× the lift load of a compact arm (Reach Alpha 5, 19.6 N)</small></dd></div>
-      </dl>
-    </div>
+    <figure class="clip" data-reveal>
+      <div class="clip__media">
+        <video muted loop playsinline preload="none" poster="assets/media/prototype-latch.jpg" data-src="assets/media/prototype-latch.mp4" aria-label="Prototype: two printed faces are brought together and latch."></video>
+        <span class="badge badge--proto">Prototype</span>
+        <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
+      </div>
+      <figcaption><strong>The latch, up close</strong><span class="mono">9 Oct 2026 · two faces latched by hand</span></figcaption>
+    </figure>
+    <figure class="clip" data-reveal>
+      <div class="clip__media">
+        <video muted loop playsinline preload="none" poster="assets/media/lab-powered.jpg" data-src="assets/media/lab-powered.mp4" aria-label="Prototype: the module tilts and extends its head with its own linear actuators."></video>
+        <span class="badge badge--proto">Prototype</span>
+        <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
+      </div>
+      <figcaption><strong>Moves under its own power</strong><span class="mono">Powered since 16 Oct 2026 · head tilt and extension by its six actuators · take of 20 Oct</span></figcaption>
+    </figure>
+  </div>
+  <div class="wrap facts" data-reveal>
+    <div class="fact"><p class="fact__v">588</p><p class="fact__l">ways two modules can dock: 14&nbsp;×&nbsp;14 faces, 3 orientations each</p></div>
+    <div class="fact"><p class="fact__v">34</p><p class="fact__l">claims, utility model filed with the DPMA, 21 Oct 2026</p></div>
+    <div class="fact"><p class="fact__v">463</p><p class="fact__l">automated tests in our 17,800-line planner</p></div>
   </div>
 </section>
+
+  <div class="logos" role="region" aria-labelledby="logos-title">
+    <div class="wrap logos__inner">
+    <p class="logos__label mono" id="logos-title">Built by<span>engineers from</span></p>
+    <div class="logos__viewport">
+      <ul class="logos__track">
+        <li><img src="assets/logos/rwth.png" alt="RWTH Aachen University" width="355" height="96" style="--h:39px" decoding="async"></li>
+        <li><img src="assets/logos/neura.png" alt="NEURA Robotics" width="519" height="96" style="--h:32px" decoding="async"></li>
+        <li><img src="assets/logos/fraunhofer-ipk.png" alt="Fraunhofer IPK" width="352" height="96" style="--h:39px" decoding="async"></li>
+        <li><img src="assets/logos/tsinghua.png" alt="Tsinghua University" width="245" height="96" style="--h:53px" decoding="async"></li>
+        <li><img src="assets/logos/roland-berger.png" alt="Roland Berger" width="202" height="96" style="--h:46px" decoding="async"></li>
+        <li><img src="assets/logos/viega.png" alt="Viega" width="235" height="96" style="--h:38px" decoding="async"></li>
+        <li><img src="assets/logos/bht.png" alt="Berliner Hochschule für Technik" width="276" height="96" style="--h:45px" decoding="async"></li>
+        <li><img src="assets/logos/hkust.png" alt="HKUST" width="306" height="96" style="--h:49px" decoding="async"></li>
+        <li><img src="assets/logos/rwth-wzl.png" alt="WZL of RWTH Aachen University" width="520" height="73" style="--h:28px" decoding="async"></li>
+        <li><img src="assets/logos/horvath.png" alt="Horváth" width="399" height="96" style="--h:36px" decoding="async"></li>
+        <li><img src="assets/logos/antler.png" alt="Antler" width="398" height="96" style="--h:35px" decoding="async"></li>
+      </ul>
+      <ul class="logos__track" aria-hidden="true">
+        <li><img src="assets/logos/rwth.png" alt="" width="355" height="96" style="--h:39px" decoding="async"></li>
+        <li><img src="assets/logos/neura.png" alt="" width="519" height="96" style="--h:32px" decoding="async"></li>
+        <li><img src="assets/logos/fraunhofer-ipk.png" alt="" width="352" height="96" style="--h:39px" decoding="async"></li>
+        <li><img src="assets/logos/tsinghua.png" alt="" width="245" height="96" style="--h:53px" decoding="async"></li>
+        <li><img src="assets/logos/roland-berger.png" alt="" width="202" height="96" style="--h:46px" decoding="async"></li>
+        <li><img src="assets/logos/viega.png" alt="" width="235" height="96" style="--h:38px" decoding="async"></li>
+        <li><img src="assets/logos/bht.png" alt="" width="276" height="96" style="--h:45px" decoding="async"></li>
+        <li><img src="assets/logos/hkust.png" alt="" width="306" height="96" style="--h:49px" decoding="async"></li>
+        <li><img src="assets/logos/rwth-wzl.png" alt="" width="520" height="73" style="--h:28px" decoding="async"></li>
+        <li><img src="assets/logos/horvath.png" alt="" width="399" height="96" style="--h:36px" decoding="async"></li>
+        <li><img src="assets/logos/antler.png" alt="" width="398" height="96" style="--h:35px" decoding="async"></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
 
 <!-- MODULE -->
 <section class="module" id="module" aria-labelledby="module-title">
   <div class="wrap section-head section-head--split" data-reveal>
     <div>
-      <p class="eyebrow">05 · The module</p>
+      <p class="eyebrow">04 · The module</p>
       <h2 id="module-title" class="h2">Everything is made of one part.</h2>
     </div>
     <p class="lead">An actuated strut with a docking head at each end. Built many times over, it becomes whatever the job needs. That part, its docks and its reconfiguration under load are what we build, protect and qualify.</p>
@@ -457,6 +429,39 @@
   </div>
 </section>
 
+<!-- PHYSICS -->
+<section class="paper physics" id="physics" aria-labelledby="physics-title">
+  <span id="how" aria-hidden="true"></span>
+  <div class="wrap section-head section-head--split" data-reveal>
+    <div>
+      <p class="eyebrow">05 · Why it works</p>
+      <h2 id="physics-title" class="h2">Enter as a chain. Work as a structure.</h2>
+    </div>
+    <p class="lead">The gain is leverage. In a chain, actuators about 2 cm from each joint axis hold the tool load in bending, so force and stiffness collapse with reach. Braced, two supports about 40 cm apart hold it and the struts carry the load along their axes. Force grows with that ratio, stiffness with its square.</p>
+  </div>
+  <div class="wrap physics__grid">
+    <figure class="loadpath" data-reveal>
+      <svg viewBox="0 0 640 340" role="img" aria-labelledby="lp-title">
+        <title id="lp-title">Load paths: A, a chain carries the tool load in bending at every joint; B, the same modules braced on the rim and a wall carry it axially.</title>
+        <defs><marker id="lp-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 9 5 0 9z" class="lp-ah"/></marker></defs>
+        <g class="lp-wall"><path d="M40 40H280M360 40H600"/><path d="M60 40l-10-10M100 40l-10-10M140 40l-10-10M180 40l-10-10M220 40l-10-10M260 40l-10-10M380 40l-10-10M420 40l-10-10M460 40l-10-10M500 40l-10-10M540 40l-10-10M580 40l-10-10"/><path d="M600 130V300M600 150l10 10M600 190l10 10M600 230l10 10M600 270l10 10"/></g>
+        <g class="lp-chain"><path d="M160 40 148 122 170 204 150 270"/><path d="M150 272v34" class="lp-load" marker-end="url(#lp-a)"/><circle cx="160" cy="40" r="7"/><circle cx="148" cy="122" r="7" class="lp-hot"/><circle cx="170" cy="204" r="7" class="lp-hot"/><circle cx="150" cy="270" r="7" class="lp-hot"/></g>
+        <g class="lp-truss"><path d="M470 40 410 150 500 250 470 40M500 250 600 215"/><path d="M500 252v34" class="lp-load" marker-end="url(#lp-a)"/><circle cx="470" cy="40" r="7"/><circle cx="410" cy="150" r="7"/><circle cx="500" cy="250" r="7"/><circle cx="600" cy="215" r="7"/></g>
+        <text x="40" y="330" class="lp-t">A · CHAIN: JOINTS IN BENDING</text>
+        <text x="360" y="330" class="lp-t">B · BRACED: STRUTS AXIAL</text>
+      </svg>
+      <figcaption class="mono">Schematic. Marked joints carry the tool moment through actuators about 2 cm from their axis.</figcaption>
+    </figure>
+    <div class="physics__nums" data-reveal>
+      <dl class="stats stats--paper">
+        <div><dt class="mono">Tool force</dt><dd>35× <small>braced vs. as a chain, same four MK1.1 modules, tool 1.0 m deep; computed statics, not a measurement</small></dd></div>
+        <div><dt class="mono">Stiffness</dt><dd>560× <small>braced vs. as a chain in the same computed statics; docks assumed rigid</small></dd></div>
+        <div><dt class="mono">Stage 1 target</dt><dd>200 N <small>held 60 s within 5 mm at 18 of 20 working positions, at most 6 kg of modules; 10× the lift load of a compact arm (Reach Alpha 5, 19.6 N)</small></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
 <!-- FIRST JOB -->
 <section class="paper firstjob" id="first-job" aria-labelledby="fj-title">
   <span id="market" aria-hidden="true"></span>
@@ -467,6 +472,24 @@
     </div>
     <p class="lead">Retrieving and placing objects without human entry in hazardous, confined or unstructured spaces. Stage 1 tests it in a guarded mock plant hall with three equipment mock-ups; Stage 2 moves the task family onto real equipment with a plant partner.</p>
   </div>
+  <div class="wrap theaters__grid">
+    <article class="theater theater--first" data-reveal>
+      <p class="theater__step mono">First</p>
+      <h3 class="h3">Energy and industrial plants</h3>
+      <p>Vessels, columns and exchangers: retrieve, inspect and place sensors through nozzles and manways. No confined-space entry, fewer openings, less downtime per intervention.</p>
+    </article>
+    <article class="theater" data-reveal>
+      <p class="theater__step mono">Next</p>
+      <h3 class="h3">Civil protection and rescue</h3>
+      <p>Inspect collapsed structures and voids before anyone enters. The first look costs a module, not a rescuer.</p>
+    </article>
+    <article class="theater" data-reveal>
+      <p class="theater__step mono">Dual-use</p>
+      <h3 class="h3">Defense maintenance and protection</h3>
+      <p>Aircraft fuel tanks, vehicle hulls, ordnance disposal and CBRN reconnaissance. Never weapons, munitions or fire control.</p>
+    </article>
+  </div>
+
   <div class="wrap fj__grid">
     <table class="spec" data-reveal>
       <caption class="sr">Stage 1 task specification</caption>
@@ -486,23 +509,6 @@
       <div class="target"><p class="target__value">200<span>N</span></p><p class="target__label">usable tool force, held 60 s within 5 mm, 10× a compact arm's lift load</p></div>
       <p class="targets__note mono">Our Stage 1 targets in the SPRIND Next Frontier Robotics Challenge, 13 Nov 2026 to 30 Sep 2027.</p>
     </div>
-  </div>
-  <div class="wrap theaters__grid">
-    <article class="theater theater--first" data-reveal>
-      <p class="theater__step mono">First</p>
-      <h3 class="h3">Energy and industrial plants</h3>
-      <p>Vessels, columns and exchangers: retrieve, inspect and place sensors through nozzles and manways. No confined-space entry, fewer openings, less downtime per intervention.</p>
-    </article>
-    <article class="theater" data-reveal>
-      <p class="theater__step mono">Next</p>
-      <h3 class="h3">Civil protection and rescue</h3>
-      <p>Inspect collapsed structures and voids before anyone enters. The first look costs a module, not a rescuer.</p>
-    </article>
-    <article class="theater" data-reveal>
-      <p class="theater__step mono">Dual-use</p>
-      <h3 class="h3">Defense maintenance and protection</h3>
-      <p>Aircraft fuel tanks, vehicle hulls, ordnance disposal and CBRN reconnaissance. Never weapons, munitions or fire control.</p>
-    </article>
   </div>
 </section>
 
@@ -530,7 +536,16 @@
 <section class="team" id="team" aria-label="Team">
   <div class="wrap section-head section-head--wide" data-reveal>
     <p class="eyebrow">08 · Team</p>
+    <h2 class="h2">The people behind Proteus.</h2>
   </div>
+  <div class="wrap">
+    <figure class="founders" data-reveal>
+      <video class="founders__video" controls playsinline preload="none" poster="assets/media/founders.jpg" aria-label="Ruben and Yannik introduce Proteus and show the MK1 prototype.">
+        <source src="assets/media/founders.mp4" type="video/mp4">
+      </video>
+    </figure>
+  </div>
+
   <div class="wrap team__grid">
     <article class="person" data-reveal>
       <span class="person__avatar" aria-hidden="true">RE</span>
@@ -544,13 +559,6 @@
       <p>Physical AI at NEURA Robotics and consulting at Roland Berger. Two M.Sc. degrees from RWTH Aachen and Tsinghua University. Two master craftsman certificates (Meisterbriefe) in metal and electrical engineering.</p>
       <a class="link mono" href="https://www.linkedin.com/in/yannik-trinn/" target="_blank" rel="noopener">LinkedIn ↗</a>
     </article>
-  </div>
-  <div class="wrap">
-    <figure class="founders" data-reveal>
-      <video class="founders__video" controls playsinline preload="none" poster="assets/media/founders.jpg" aria-label="Ruben and Yannik introduce Proteus and show the MK1 prototype.">
-        <source src="assets/media/founders.mp4" type="video/mp4">
-      </video>
-    </figure>
   </div>
 </section>
 
