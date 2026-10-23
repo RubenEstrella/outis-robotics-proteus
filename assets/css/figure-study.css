@@ -92,13 +92,33 @@ body { line-height: 1.65; }
 .fact__v { font-size: clamp(3rem, 5vw, 5rem); }
 .fact__v--text { font-size: clamp(1.5rem, 2.4vw, 2.5rem); line-height: 1.15; letter-spacing: -.035em; }
 .fact__l { max-width: 30ch; }
-.stakes { background: #252b21; }
+.stakes {
+  border-bottom: 0;
+  background:
+    radial-gradient(ellipse at 10% 55%, rgba(166, 174, 186, .14), transparent 65%),
+    linear-gradient(180deg, #101110, #191b1c 48%, #101110);
+}
 .stakes .lead, .stake figcaption p { color: #d0d5c9; }
 .stake { padding-block: 40px; }
 .stake__value { font-size: clamp(3.5rem, 6vw, 6.5rem); }
 .stake__src { color: #b5beac; font-size: .65rem; }
 .stakes__punch { font-weight: 400; font-stretch: 100%; letter-spacing: -.04em; max-width: 30ch; }
-.mission { background: #101110; }
+.mission {
+  background:
+    radial-gradient(ellipse at 85% 0%, rgba(166, 174, 186, .1), transparent 32%),
+    #101110;
+}
+.module {
+  background:
+    radial-gradient(ellipse at 0% 65%, rgba(166, 174, 186, .16), transparent 65%),
+    linear-gradient(180deg, #101110, #17191a 55%, #101110);
+}
+.physics {
+  background: linear-gradient(180deg, #f0f0e9, #e4e5df);
+}
+.firstjob {
+  background: linear-gradient(180deg, #e4e5df, #f0f0e9);
+}
 .mission > .section-head .lead { max-width: 65ch; }
 .film { max-width: none; padding-inline: 0; }
 .film__frame { border: 0; }
@@ -141,7 +161,12 @@ body { line-height: 1.65; }
 .phase p:last-child { max-width: 52ch; }
 .theater, .paper .theater--first, .vision__item { background: transparent; border: 0; border-top: 1px solid var(--line-2); border-radius: 0; padding: 28px 0 0; }
 .theaters__grid { gap: 40px; }
-.vision { background: #262d22; }
+.vision {
+  border-top: 0;
+  background:
+    radial-gradient(ellipse at 15% 100%, rgba(192, 199, 212, .19), transparent 68%),
+    #101110;
+}
 .vision__grid { gap: 64px; }
 .vision__text { font-size: clamp(1.4rem, 2vw, 2rem); font-weight: 400; letter-spacing: -.025em; max-width: 40ch; }
 .vision__title { max-width: 22ch; }
@@ -152,12 +177,17 @@ body { line-height: 1.65; }
 .founders { max-width: 100%; margin-top: 64px; }
 .team .founders { margin-top: 0; margin-bottom: 56px; }
 .founders__video { aspect-ratio: 21 / 9; object-fit: contain; }
-.contact { background: #252b21; }
+.contact {
+  border-top: 0;
+  background:
+    radial-gradient(ellipse at 12% 105%, rgba(192, 199, 212, .24), transparent 65%),
+    #070708;
+}
 .contact__inner { padding-block: var(--section); }
 .contact__title { font-size: clamp(2.5rem, 5.7vw, 6rem); max-width: 18ch; }
 .contact .lead { max-width: 55ch; margin-top: 32px; }
 .contact .hero__actions { margin-top: 36px; }
-.foot { padding-block: 44px; }
+.foot { padding-block: 44px; background: #070708; }
 .foot__inner { grid-template-columns: 1fr auto; align-items: center; gap: 24px; }
 .fineprint { grid-column: 1 / -1; font-size: .6rem; }
 @media (min-width: 981px) and (max-width: 1120px) { .brand__by { display: none; } .nav__inner { gap: 20px; } }
