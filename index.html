@@ -20,7 +20,7 @@
 <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/media/v9-hero-1600.jpg" as="image" fetchpriority="high">
 <link rel="stylesheet" href="assets/css/site.css?v=19">
-<link rel="stylesheet" href="assets/css/figure-study.css?v=1">
+<link rel="stylesheet" href="assets/css/figure-study.css?v=2">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -131,24 +131,12 @@
     </div>
   </div>
 
-  <div class="wrap phases">
-    <article class="phase" data-reveal>
-      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-01-dropoff.jpg" data-src="assets/media/v8-01-dropoff.mp4" aria-label="Simulation: a heap of modules assembles into a walker at the barrier."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
-      <p class="phase__tag mono"><span>1</span>Self-assembly</p>
-      <h3 class="phase__title">A crate, not a crew.</h3>
-      <p>The modules arrive as a heap at the barrier, dock and stand up as a walker.</p>
-    </article>
+  <div class="wrap phases phases--key">
     <article class="phase" data-reveal>
       <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-02-rubble.jpg" data-src="assets/media/v8-02-rubble.mp4" aria-label="Simulation: the walker carries the sensor over rubble."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
       <p class="phase__tag mono"><span>2</span>Walker</p>
       <h3 class="phase__title">Walks where wheels stop.</h3>
       <p>Carries the sensor over rubble. Nobody crosses the open street.</p>
-    </article>
-    <article class="phase" data-reveal>
-      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-03-ravine.jpg" data-src="assets/media/v8-03-ravine.mp4" aria-label="Simulation: the walker becomes a bridge over a ravine."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
-      <p class="phase__tag mono"><span>3</span>Bridge</p>
-      <h3 class="phase__title">Brings its own bridge.</h3>
-      <p>Computed statics: 30 modules over a 1.0 m gap, 92–96 N peak rod force while a 1 kg case crosses.</p>
     </article>
     <article class="phase" data-reveal>
       <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-04-gap.jpg" data-src="assets/media/v8-04-gap.mp4" aria-label="Simulation: a chain of modules lowers the sensor through a narrow gap into the cellar."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
@@ -162,12 +150,31 @@
       <h3 class="phase__title">A measurement, not a guess.</h3>
       <p>Braced against floor and column, it presses the ultrasonic sensor on with force a snake cannot give.</p>
     </article>
+  </div>
+  <div class="wrap">
+    <details class="disclosure mission__more">
+      <summary>Explore the other three mission steps</summary>
+      <div class="disclosure__body phases phases--extra">
+    <article class="phase" data-reveal>
+      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-01-dropoff.jpg" data-src="assets/media/v8-01-dropoff.mp4" aria-label="Simulation: a heap of modules assembles into a walker at the barrier."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
+      <p class="phase__tag mono"><span>1</span>Self-assembly</p>
+      <h3 class="phase__title">A crate, not a crew.</h3>
+      <p>The modules arrive as a heap at the barrier, dock and stand up as a walker.</p>
+    </article>
+    <article class="phase" data-reveal>
+      <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-03-ravine.jpg" data-src="assets/media/v8-03-ravine.mp4" aria-label="Simulation: the walker becomes a bridge over a ravine."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
+      <p class="phase__tag mono"><span>3</span>Bridge</p>
+      <h3 class="phase__title">Brings its own bridge.</h3>
+      <p>Computed statics: 30 modules over a 1.0 m gap, 92–96 N peak rod force while a 1 kg case crosses.</p>
+    </article>
     <article class="phase" data-reveal>
       <div class="phase__media"><video muted loop playsinline preload="none" poster="assets/media/v8-06-return.jpg" data-src="assets/media/v8-06-return.mp4" aria-label="Simulation: the modules withdraw and walk back."></video><button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button></div>
       <p class="phase__tag mono"><span>6</span>Walker again</p>
       <h3 class="phase__title">The team goes in knowing.</h3>
       <p>Back through the gap, re-form, walk out. Next job, next shape.</p>
     </article>
+      </div>
+    </details>
   </div>
 
   <figure class="wrap profile" id="profile" data-reveal>
@@ -245,23 +252,6 @@
     <p class="profile__hint mono" aria-hidden="true">Swipe to follow the route →</p>
   </figure>
 
-  <div class="wrap shift__matrix" data-reveal>
-    <h3 class="h3">Which robot gets the whole job done?</h3>
-    <div class="matrix-scroll" role="region" aria-label="Capability comparison" tabindex="0">
-      <table class="matrix">
-        <caption class="sr">What each option can do in the mission, our assessment</caption>
-        <thead><tr><th scope="col"><span class="sr">Mission step</span></th><th scope="col">Person</th><th scope="col">Legged robot</th><th scope="col">Tracked robot</th><th scope="col">Drone</th><th scope="col">Snake robot</th><th scope="col" class="is-us">Proteus</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Keeps people out of the danger zone</th><td><span class="cap cap--no">No</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td class="is-us"><span class="cap cap--yes">Yes</span></td></tr>
-          <tr><th scope="row">Crosses rubble and gaps</th><td><span class="cap cap--part">At risk</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--part">Small gaps</span></td><td><span class="cap cap--yes">Flies</span></td><td><span class="cap cap--no">No</span></td><td class="is-us"><span class="cap cap--yes">Walker, bridge</span></td></tr>
-          <tr><th scope="row">Passes a 250 mm opening</th><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--part">Small units only</span></td><td><span class="cap cap--part">Small units, no contact</span></td><td><span class="cap cap--yes">Yes</span></td><td class="is-us"><span class="cap cap--yes">As a chain</span></td></tr>
-          <tr><th scope="row">Applies force at 1 m reach behind it</th><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">Little force at reach</span></td><td class="is-us"><span class="cap cap--yes">Braced, 200 N target</span></td></tr>
-          <tr><th scope="row">One kit for every shape of job</th><td><span class="cap cap--none">n/a</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td class="is-us"><span class="cap cap--yes">Yes</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="matrix__hint mono">Swipe to compare all options →</p>
-  </div>
 </section>
 
 <!-- BUILT -->
@@ -272,6 +262,26 @@
       <h2 id="built-title" class="h2">The first module is real.</h2>
     </div>
     <p class="lead">MK1 module with two actuated heads, docks that carry load and a test rig for powered docking. Single takes on our bench, with date.</p>
+  </div>
+  <div class="wrap development" id="development" role="region" aria-labelledby="development-title">
+    <h3 class="development__heading mono" id="development-title">Development status</h3>
+    <div class="development__grid">
+      <article class="development__item">
+        <p class="development__label mono">01 / Demonstrated in hardware</p>
+        <h4>Powered module. Load-bearing docks.</h4>
+        <p>The MK1 prototype moves its heads under its own power. Bench clips below show docking and parts suspended from a single dock.</p>
+      </article>
+      <article class="development__item">
+        <p class="development__label mono">02 / Studied in simulation</p>
+        <h4>Changing shape. Carrying load.</h4>
+        <p>Mission films show planner simulations. MK1.1 reconfiguration studies check kinematics; force and stiffness comparisons are computed statics.</p>
+      </article>
+      <article class="development__item">
+        <p class="development__label mono">03 / Next validation goal</p>
+        <h4>A complete task behind an opening.</h4>
+        <p>Stage 1 targets retrieval and sensor placement in guarded equipment mock-ups. Task completion and tool-force figures remain development targets.</p>
+      </article>
+    </div>
   </div>
   <div class="wrap built__clips">
     <figure class="clip" data-reveal>
@@ -460,6 +470,30 @@
       </dl>
     </div>
   </div>
+  <div class="wrap">
+    <details class="disclosure technical-details">
+      <summary>Technical comparison: Proteus and other robot types</summary>
+      <div class="disclosure__body">
+<div class="shift__matrix">
+    <h3 class="h3">Which robot gets the whole job done?</h3>
+    <div class="matrix-scroll" role="region" aria-label="Capability comparison" tabindex="0">
+      <table class="matrix">
+        <caption class="sr">What each option can do in the mission, our assessment</caption>
+        <thead><tr><th scope="col"><span class="sr">Mission step</span></th><th scope="col">Person</th><th scope="col">Legged robot</th><th scope="col">Tracked robot</th><th scope="col">Drone</th><th scope="col">Snake robot</th><th scope="col" class="is-us">Proteus</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Keeps people out of the danger zone</th><td><span class="cap cap--no">No</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td class="is-us"><span class="cap cap--yes">Yes</span></td></tr>
+          <tr><th scope="row">Crosses rubble and gaps</th><td><span class="cap cap--part">At risk</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--part">Small gaps</span></td><td><span class="cap cap--yes">Flies</span></td><td><span class="cap cap--no">No</span></td><td class="is-us"><span class="cap cap--yes">Walker, bridge</span></td></tr>
+          <tr><th scope="row">Passes a 250 mm opening</th><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--part">Small units only</span></td><td><span class="cap cap--part">Small units, no contact</span></td><td><span class="cap cap--yes">Yes</span></td><td class="is-us"><span class="cap cap--yes">As a chain</span></td></tr>
+          <tr><th scope="row">Applies force at 1 m reach behind it</th><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">Little force at reach</span></td><td class="is-us"><span class="cap cap--yes">Braced, 200 N target</span></td></tr>
+          <tr><th scope="row">One kit for every shape of job</th><td><span class="cap cap--none">n/a</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td class="is-us"><span class="cap cap--yes">Yes</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="matrix__hint mono">Swipe to compare all options →</p>
+  </div>
+      </div>
+    </details>
+  </div>
 </section>
 
 <!-- FIRST JOB -->
@@ -490,7 +524,11 @@
     </article>
   </div>
 
-  <div class="wrap fj__grid">
+  <div class="wrap">
+    <details class="disclosure stage-details">
+      <summary>Stage 1: task specifications and development targets</summary>
+      <div class="disclosure__body">
+<div class="fj__grid">
     <table class="spec" data-reveal>
       <caption class="sr">Stage 1 task specification</caption>
       <tbody>
@@ -510,6 +548,9 @@
       <p class="targets__note mono">Our Stage 1 targets in the SPRIND Next Frontier Robotics Challenge, 13 Nov 2026 to 30 Sep 2027.</p>
     </div>
   </div>
+      </div>
+    </details>
+  </div>
 </section>
 
 
@@ -520,15 +561,8 @@
     <p class="eyebrow">07 · Mission and vision</p>
     <h2 id="vision-title" class="h2 vision__title">Robots that bring their own structure.</h2>
   </div>
-  <div class="wrap vision__grid">
-    <article class="vision__item" data-reveal>
-      <p class="vision__label mono">Mission</p>
-      <p class="vision__text">Nobody should have to go first into a space a robot could enter. We build modular robots that pass the opening, take the shape the task needs and work with real force behind it.</p>
-    </article>
-    <article class="vision__item" data-reveal>
-      <p class="vision__label mono">Vision</p>
-      <p class="vision__text">One module family that becomes a walker, a chain, a bridge or a braced arm on site. A fleet that takes the next job instead of idling like a specialist, built in Europe.</p>
-    </article>
+  <div class="wrap" data-reveal>
+    <p class="vision__statement">Built in Europe, one module family becomes the structure each job needs. Our goal: keep people out of hazardous spaces and put the same fleet to work on the next task.</p>
   </div>
 </section>
 
@@ -565,10 +599,10 @@
 <!-- CONTACT -->
 <section class="contact" id="contact" aria-labelledby="contact-title">
   <div class="wrap contact__inner" data-reveal>
-    <h2 id="contact-title" class="contact__title">Where do you still send people first?</h2>
-    <p class="lead">Tell us the opening, the ground and the job. Plant operators, rescue services, integrators, research programs and investors: we want the hard cases.</p>
+    <h2 id="contact-title" class="contact__title">Let?s discuss your pilot application.</h2>
+    <p class="lead">Tell us the access opening, the environment and the task. We want to explore pilot applications with plant operators, rescue services and integration partners.</p>
     <div class="hero__actions">
-      <a class="btn btn--accent" href="mailto:yannik.trinn@outis-robotics.com?subject=Proteus">yannik.trinn@outis-robotics.com</a>
+      <a class="btn btn--accent" href="mailto:yannik.trinn@outis-robotics.com?subject=Proteus%20pilot%20application">Discuss a pilot application <span aria-hidden="true">?</span></a>
       <a class="btn btn--ghost" href="https://www.linkedin.com/in/yannik-trinn/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>

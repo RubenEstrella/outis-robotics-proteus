@@ -9,12 +9,16 @@ media and fonts remain self-hosted Proteus assets. Navigation and hero copy are
 shortened; evidence labels and technical content are retained.
 
 To return to the original styling, remove the `figure-study.css` stylesheet link.
-The study has not been pushed or deployed.
+The original design and ordering checkpoint is saved on GitHub as `0316f24`.
 
-Reading order: hero → problem → mission film and phases → prototype evidence and
+Reading order: hero → problem → mission film and three key capabilities → development
+status and prototype evidence and
 team-background logos → module → physics → applications and Stage 1 specifications
 → mission and vision → founders film and biographies → contact. The route diagram
-follows the mission phases. Reordering retains all existing content and media.
+follows the mission phases. Three further mission clips, the robot comparison and
+Stage 1 specifications/targets are available in native, keyboard-accessible
+disclosures. Mission and vision share one concise statement. The contact action
+opens an email about a pilot application. All original media are retained.
 
 Preview from this directory with `npx vite --host 127.0.0.1 --port 4173` (Vite
 provides HTTP range requests for video seeking).
