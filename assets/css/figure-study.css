@@ -121,6 +121,9 @@ body { line-height: 1.65; }
 .disclosure__body { padding-block: 12px 32px; }
 .mission__more { margin-bottom: 64px; }
 .technical-details { margin-top: 56px; }
+.force-principle { border-top: 1px solid var(--line-2); padding-top: 24px; }
+.force-principle > p:not(.eyebrow), .force-note { color: var(--ink-2); font-size: .95rem; }
+.force-note { margin-top: 24px; }
 .technical-details .shift__matrix, .stage-details .fj__grid { margin-bottom: 0; }
 .development { margin-bottom: 56px; }
 .development__heading { font-weight: 400; text-transform: uppercase; letter-spacing: .1em; margin: 0 0 24px; }

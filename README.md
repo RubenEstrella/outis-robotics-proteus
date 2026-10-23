@@ -20,6 +20,14 @@ Stage 1 specifications/targets are available in native, keyboard-accessible
 disclosures. Mission and vision share one concise statement. The contact action
 opens an email about a pilot application. All original media are retained.
 
+Force claims in section 05 are grounded in the Track 2 Metric 1 table and
+Appendix C of `Proteus_SPRIND_Track_2_v18.docx` in Google Drive (file ID
+`1-cr8YWCEUrYWhGTMxcmubyQcL6ojlLfr`). The nominal 10.20 ratio is the
+200 N development target divided by the Reach Alpha 5 published 19.6133 N
+lift-load equivalent; it is not an experimentally demonstrated improvement.
+The previous 35x/560x comparison and illustrative load-path schematic have
+been removed.
+
 Preview from this directory with `npx vite --host 127.0.0.1 --port 4173` (Vite
 provides HTTP range requests for video seeking).
 

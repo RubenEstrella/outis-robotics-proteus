@@ -274,7 +274,7 @@
       <article class="development__item">
         <p class="development__label mono">02 / Studied in simulation</p>
         <h4>Changing shape. Carrying load.</h4>
-        <p>Mission films show planner simulations. MK1.1 reconfiguration studies check kinematics; force and stiffness comparisons are computed statics.</p>
+        <p>Mission films show planner simulations. MK1.1 reconfiguration studies check kinematics. Working-force targets still require physical qualification.</p>
       </article>
       <article class="development__item">
         <p class="development__label mono">03 / Next validation goal</p>
@@ -447,27 +447,21 @@
       <p class="eyebrow">05 · Why it works</p>
       <h2 id="physics-title" class="h2">Enter as a chain. Work as a structure.</h2>
     </div>
-    <p class="lead">The gain is leverage. In a chain, actuators about 2 cm from each joint axis hold the tool load in bending, so force and stiffness collapse with reach. Braced, two supports about 40 cm apart hold it and the struts carry the load along their axes. Force grows with that ratio, stiffness with its square.</p>
+    <p class="lead">Proteus changes its load-bearing geometry after access. The modules enter as a slender chain, then form a locally braced working structure with parallel load paths. The actuated struts carry load along their axes while the structure moves its tool.</p>
   </div>
   <div class="wrap physics__grid">
-    <figure class="loadpath" data-reveal>
-      <svg viewBox="0 0 640 340" role="img" aria-labelledby="lp-title">
-        <title id="lp-title">Load paths: A, a chain carries the tool load in bending at every joint; B, the same modules braced on the rim and a wall carry it axially.</title>
-        <defs><marker id="lp-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 9 5 0 9z" class="lp-ah"/></marker></defs>
-        <g class="lp-wall"><path d="M40 40H280M360 40H600"/><path d="M60 40l-10-10M100 40l-10-10M140 40l-10-10M180 40l-10-10M220 40l-10-10M260 40l-10-10M380 40l-10-10M420 40l-10-10M460 40l-10-10M500 40l-10-10M540 40l-10-10M580 40l-10-10"/><path d="M600 130V300M600 150l10 10M600 190l10 10M600 230l10 10M600 270l10 10"/></g>
-        <g class="lp-chain"><path d="M160 40 148 122 170 204 150 270"/><path d="M150 272v34" class="lp-load" marker-end="url(#lp-a)"/><circle cx="160" cy="40" r="7"/><circle cx="148" cy="122" r="7" class="lp-hot"/><circle cx="170" cy="204" r="7" class="lp-hot"/><circle cx="150" cy="270" r="7" class="lp-hot"/></g>
-        <g class="lp-truss"><path d="M470 40 410 150 500 250 470 40M500 250 600 215"/><path d="M500 252v34" class="lp-load" marker-end="url(#lp-a)"/><circle cx="470" cy="40" r="7"/><circle cx="410" cy="150" r="7"/><circle cx="500" cy="250" r="7"/><circle cx="600" cy="215" r="7"/></g>
-        <text x="40" y="330" class="lp-t">A · CHAIN: JOINTS IN BENDING</text>
-        <text x="360" y="330" class="lp-t">B · BRACED: STRUTS AXIAL</text>
-      </svg>
-      <figcaption class="mono">Schematic. Marked joints carry the tool moment through actuators about 2 cm from their axis.</figcaption>
-    </figure>
+    <div class="force-principle" data-reveal>
+      <p class="eyebrow">Access, reconfigure, work</p>
+      <h3 class="h3">The working structure is built at the task.</h3>
+      <p>Local bracing and parallel struts create the load paths needed for the tool force. Supports and working configurations are selected for the task and qualified together.</p>
+      <p>The comparison is with the compact Reach Alpha 5 manipulator. It concerns working capability after access, with Proteus bracing declared explicitly.</p>
+    </div>
     <div class="physics__nums" data-reveal>
       <dl class="stats stats--paper">
-        <div><dt class="mono">Tool force</dt><dd>35× <small>braced vs. as a chain, same four MK1.1 modules, tool 1.0 m deep; computed statics, not a measurement</small></dd></div>
-        <div><dt class="mono">Stiffness</dt><dd>560× <small>braced vs. as a chain in the same computed statics; docks assumed rigid</small></dd></div>
-        <div><dt class="mono">Stage 1 target</dt><dd>200 N <small>held 60 s within 5 mm at 18 of 20 working positions, at most 6 kg of modules; 10× the lift load of a compact arm (Reach Alpha 5, 19.6 N)</small></dd></div>
+        <div><dt class="mono">Force target ratio</dt><dd>10.2&times; <small>nominal target/reference ratio: 200 N divided by the Reach Alpha 5 published 2 kg lift-load equivalent (19.6 N). A development target, not a measured improvement.</small></dd></div>
+        <div><dt class="mono">Tool force target</dt><dd>200 N <small>Stage 1: held for 60 s with at most 5 mm tool displacement at 18 of 20 positions, across at least 3 braced configurations. Physical qualification pending.</small></dd></div>
       </dl>
+      <p class="force-note">The experimental force ratio will be measured at common reachable positions with matched task direction, hold time and displacement limit. Mounting, supports and operating conditions will be reported.</p>
     </div>
   </div>
   <div class="wrap">
@@ -544,7 +538,7 @@
       <div class="target"><p class="target__value">6<span>/10</span></p><p class="target__label">complete task chains on unseen layouts</p></div>
       <div class="target"><p class="target__value">18<span>/20</span></p><p class="target__label">working positions holding the target force, in 3 load-bearing configurations</p></div>
       <div class="target"><p class="target__value">200</p><p class="target__label">physically validated configurations from one module family, the Challenge target</p></div>
-      <div class="target"><p class="target__value">200<span>N</span></p><p class="target__label">usable tool force, held 60 s within 5 mm, 10× a compact arm's lift load</p></div>
+      <div class="target"><p class="target__value">200<span>N</span></p><p class="target__label">usable tool force target, held 60 s within 5 mm; nominally 10.2&times; the Reach Alpha 5 published lift-load equivalent</p></div>
       <p class="targets__note mono">Our Stage 1 targets in the SPRIND Next Frontier Robotics Challenge, 13 Nov 2026 to 30 Sep 2027.</p>
     </div>
   </div>
