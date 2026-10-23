@@ -34,6 +34,12 @@ each (150 total minimum), not an upper limit. The Stage 1 interim goal remains
 2 classes and 4 configurations. These are development targets, not current
 validated counts.
 
+Section 06 follows the v18 Track 2 work plan and customer/application descriptions.
+The former three-equipment-mock-up hall and Stage 2 plant-partner wording came
+from the Track 1 answers included in the same document. Track 2 Stage 1 instead
+plans the magazine-chain-braced-working-structure-return segment on a test rig.
+Application benefits and further markets are described as goals/planned uses.
+
 Preview from this directory with `npx vite --host 127.0.0.1 --port 4173` (Vite
 provides HTTP range requests for video seeking).
 
