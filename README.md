@@ -27,10 +27,12 @@ Appendix C of `Proteus_SPRIND_Track_2_v18.docx` in Google Drive (file ID
 lift-load equivalent; it is not an experimentally demonstrated improvement.
 The previous 35x/560x comparison and illustrative load-path schematic have
 been removed.
-The adjacent configuration metric uses the same source's overall target of at
-least 3 classes with at least 50 physically validated configurations each
-(150 total minimum), with the Stage 1 interim goal of 2 classes and 4
-configurations. These are development targets, not current validated counts.
+The adjacent configuration metric shows the founders' current target of 200+
+physically validated configurations, confirmed by the user on 23 October 2026.
+The v18 document specifies a minimum of 3 classes with at least 50 configurations
+each (150 total minimum), not an upper limit. The Stage 1 interim goal remains
+2 classes and 4 configurations. These are development targets, not current
+validated counts.
 
 Preview from this directory with `npx vite --host 127.0.0.1 --port 4173` (Vite
 provides HTTP range requests for video seeking).
