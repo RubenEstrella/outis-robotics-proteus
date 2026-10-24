@@ -82,6 +82,17 @@ body { line-height: 1.65; }
 @media (min-width: 760px) {
   .logos .wrap { padding-left: max(40px, env(safe-area-inset-left, 0px)); padding-right: max(40px, env(safe-area-inset-right, 0px)); }
 }
+/* Both identical tracks move one full track width before the seamless reset. */
+@keyframes logos-run-right {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .logos__track { width: max-content; flex: 0 0 auto; animation: logos-run-right 52s linear infinite; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  .logos__track { animation-duration: 40s; }
+}
 .paper { --bg: #f0f0e9; --bg-2: #e8e9e1; --bg-3: #e3e5db; --bg-4: #d8dbcf; --ink: #252920; --ink-2: #50564a; --ink-3: #62695b; --line: rgba(37,41,32,.18); --line-2: rgba(37,41,32,.3); --accent: #414c36; --accent-text: #414c36; --proto: #f0f1e9; background: var(--bg); color: var(--ink); }
 .paper :focus-visible { outline-color: #414c36; }
 .built__clips { gap: 24px; }
