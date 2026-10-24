@@ -70,11 +70,12 @@ body { line-height: 1.65; }
 .hero__evidence { margin-left: auto; font-size: .6rem; color: #d5d9cf; }
 .media-toggle--hero { margin-left: 0; }
 .media-toggle { color: #f5f5ef; border-color: rgba(255,255,255,.4); }
-.logos { background: #e6e8df; border: 0; backdrop-filter: none; }
-.logos__inner { grid-template-columns: 150px minmax(0, 1fr); padding-block: 32px; gap: 40px; }
-.logos__label { color: #41463d; font-size: .62rem; letter-spacing: .08em; }
-.logos__track { animation-duration: 65s; }
-.logos__track img { filter: grayscale(1) brightness(0); }
+/* Preserve the original logo strip; site.css owns its layout and animation. */
+.logos { --max: 1360px; --ink: #f2f0eb; --line: rgba(242, 240, 235, .11); }
+.logos .wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 760px) {
+  .logos .wrap { padding-left: max(40px, env(safe-area-inset-left, 0px)); padding-right: max(40px, env(safe-area-inset-right, 0px)); }
+}
 .paper { --bg: #f0f0e9; --bg-2: #e8e9e1; --bg-3: #e3e5db; --bg-4: #d8dbcf; --ink: #252920; --ink-2: #50564a; --ink-3: #62695b; --line: rgba(37,41,32,.18); --line-2: rgba(37,41,32,.3); --accent: #414c36; --accent-text: #414c36; --proto: #f0f1e9; background: var(--bg); color: var(--ink); }
 .paper :focus-visible { outline-color: #414c36; }
 .built__clips { gap: 24px; }
@@ -208,9 +209,6 @@ body { line-height: 1.65; }
   .hero__foot { gap: 16px; }
   .hero__evidence { max-width: 14ch; line-height: 1.5; font-size: .52rem; }
   .hero__discover { gap: 18px; font-size: .58rem; }
-  .logos__inner { grid-template-columns: 1fr; gap: 16px; padding-block: 24px; }
-  .logos__label span { display: inline; margin-left: 6px; }
-  .logos__viewport { grid-row: auto; }
   .section-head { padding-bottom: 36px; }
   .built__clips { grid-template-columns: 1fr; gap: 40px; }
   .built__clips .clip:last-child { display: block; }
