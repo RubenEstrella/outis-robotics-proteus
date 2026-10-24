@@ -138,8 +138,27 @@ body { line-height: 1.65; }
   background: linear-gradient(180deg, #f0f0e9, #e4e5df);
 }
 .firstjob {
-  background: linear-gradient(180deg, #e4e5df, #f0f0e9);
+  background: linear-gradient(180deg, #f0f0e9, #e4e5df);
 }
+.built { background: #e4e5df; }
+.physics { background: linear-gradient(180deg, #e4e5df, #f0f0e9); }
+.commercial { margin-top: 64px; }
+.commercial__steps { list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.commercial__steps li { border-top: 1px solid var(--line-2); padding-top: 20px; }
+.commercial__steps .mono { color: var(--ink-3); font-size: .62rem; text-transform: uppercase; }
+.commercial__steps h4 { font-size: 1.3rem; font-weight: 400; line-height: 1.2; margin: 18px 0 12px; }
+.commercial__steps p { color: var(--ink-2); font-size: .95rem; margin-bottom: 0; }
+.commercial__note { color: var(--ink-3); margin-top: 24px; line-height: 1.7; }
+.execution { padding-bottom: var(--section); background: radial-gradient(ellipse at 10% 50%, rgba(192,199,212,.12), transparent 65%), #101110; }
+.execution__steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+.execution__steps li { border-top: 1px solid var(--line-2); padding-top: 24px; }
+.execution__steps .eyebrow { font-size: .6rem; margin-bottom: 22px; }
+.execution__steps .h3 { font-size: clamp(1.5rem, 2.2vw, 2rem); }
+.execution__steps p:not(.eyebrow), .execution__gate { color: var(--ink-2); font-size: .95rem; }
+.execution__proof { border-top: 1px solid var(--line); padding-top: 18px; margin-top: 24px; }
+.execution__proof b { color: var(--ink); font-weight: 500; }
+.execution__gate { border-top: 1px solid var(--line); padding-top: 24px; margin: 40px 0 0; max-width: 85ch; }
+.vision + .module { border-top: 0; }
 .mission > .section-head .lead { max-width: 65ch; }
 .film { max-width: none; padding-inline: 0; }
 .film__frame { border: 0; }
@@ -253,6 +272,7 @@ body { line-height: 1.65; }
   .built__clips .clip__media { aspect-ratio: 4 / 3; }
   .phases { grid-template-columns: 1fr; gap: 44px; }
   .development__grid { grid-template-columns: 1fr; gap: 28px; }
+  .commercial__steps, .execution__steps { grid-template-columns: 1fr; gap: 32px; }
   .vision__grid, .team__grid { grid-template-columns: 1fr; gap: 40px; }
   .founders__video { aspect-ratio: 16 / 9; }
   .foot__inner { grid-template-columns: 1fr; }

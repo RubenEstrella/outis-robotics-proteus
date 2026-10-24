@@ -20,7 +20,7 @@
 <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/media/vision-modules.jpg" as="image" fetchpriority="high">
 <link rel="stylesheet" href="assets/css/site.css?v=19">
-<link rel="stylesheet" href="assets/css/figure-study.css?v=4">
+<link rel="stylesheet" href="assets/css/figure-study.css?v=5">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -33,11 +33,11 @@
       <span class="brand__word">Proteus</span><span class="brand__by">by Outis</span>
     </a>
     <nav class="nav__links" id="menu" aria-label="Main">
-      <a href="#shift">In motion</a>
-      <a href="#built">Hardware</a>
-      <a href="#module">Technology</a>
-      <a href="#first-job">Applications</a>
       <a href="#vision">Vision</a>
+      <a href="#first-job">Market</a>
+      <a href="#built">Hardware</a>
+      <a href="#execution">Plan</a>
+      <a href="#physics">Technology</a>
       <a href="#team">Company</a>
     </nav>
     <a class="btn btn--accent btn--small nav__cta" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
@@ -60,9 +60,9 @@
   </div>
   <div class="wrap hero__content">
     <h1 id="hero-title" class="display">Smaller modules.<br>More possibilities.</h1>
-    <p class="lead hero__lead">Our vision: finer structures that take on more complex tasks. Starting with robots that work where people shouldn't have to go.</p>
+    <p class="lead hero__lead">A modular robotics platform for increasingly complex work. We start with industrial access, prove the hardware, then build smaller generations.</p>
     <div class="hero__actions">
-      <a class="btn btn--accent" href="#vision">Explore the vision <span aria-hidden="true">&#8599;</span></a>
+      <a class="btn btn--accent" href="#execution">Explore our plan <span aria-hidden="true">&#8599;</span></a>
       <a class="btn btn--ghost" href="#built">See the real hardware</a>
     </div>
   </div>
@@ -144,13 +144,291 @@
   </div>
 </section>
 
+<!-- FIRST JOB -->
+<section class="paper firstjob" id="first-job" aria-labelledby="fj-title">
+  <span id="market" aria-hidden="true"></span>
+  <div class="wrap section-head section-head--split" data-reveal>
+    <div>
+      <p class="eyebrow">02 · First market</p>
+      <h2 id="fj-title" class="h2">Start with a clear industrial need.</h2>
+    </div>
+    <p class="lead">Our first customers are maintenance teams and service providers in energy and process plants. Defined access and repeatable tasks give us a focused place to prove the platform.</p>
+  </div>
+  <div class="wrap theaters__grid">
+    <article class="theater theater--first" data-reveal>
+      <p class="theater__step mono">First market</p>
+      <h3 class="h3">Energy and industrial plants</h3>
+      <p>Retrieve foreign objects, inspect internals and place sensors inside vessels and columns. The goal: fewer confined-space entries, fewer equipment openings and less downtime.</p>
+    </article>
+    <article class="theater" data-reveal>
+      <p class="theater__step mono">Further applications</p>
+      <h3 class="h3">Civil protection and rescue</h3>
+      <p>Planned applications include inspecting collapsed structures and voids before anyone enters.</p>
+    </article>
+    <article class="theater" data-reveal>
+      <p class="theater__step mono">Dual-use</p>
+      <h3 class="h3">Defense maintenance and protection</h3>
+      <p>Planned applications include maintenance inside military aircraft fuel tanks and vehicle hulls, explosive ordnance disposal and CBRN reconnaissance.</p>
+    </article>
+  </div>
+
+  <div class="wrap commercial" aria-labelledby="commercial-title">
+    <h3 class="h3" id="commercial-title">Planned commercial path</h3>
+    <ol class="commercial__steps">
+      <li><span class="mono">01 / Understand the task</span><h4>Paid feasibility studies</h4><p>Work with plant operators on their equipment geometry and task requirements.</p></li>
+      <li><span class="mono">02 / Deliver a solution</span><h4>Module kits and integration</h4><p>Supply qualified configurations, tools and an integration package, directly or through partners.</p></li>
+      <li><span class="mono">03 / Support deployment</span><h4>Service and calibration</h4><p>Support installed kits with replacement modules, calibration and service.</p></li>
+    </ol>
+    <p class="commercial__note mono">Stage 1 commercial goal: two paid feasibility campaigns or pilot orders.</p>
+  </div>
+</section>
+
+
+<!-- BUILT -->
+<section class="paper built" id="built" aria-labelledby="built-title">
+  <div class="wrap built__head" data-reveal>
+    <div>
+      <p class="eyebrow">03 · Built, not rendered</p>
+      <h2 id="built-title" class="h2">The first module is real.</h2>
+    </div>
+    <p class="lead">MK1 module with two actuated heads, docks that carry load and a test rig for powered docking. Single takes on our bench, with date.</p>
+  </div>
+  <div class="wrap development" id="development" role="region" aria-labelledby="development-title">
+    <h3 class="development__heading mono" id="development-title">Development status</h3>
+    <div class="development__grid">
+      <article class="development__item">
+        <p class="development__label mono">01 / Demonstrated in hardware</p>
+        <h4>Powered module. Load-bearing docks.</h4>
+        <p>The MK1 prototype moves its heads under its own power. Bench clips below show docking and parts suspended from a single dock.</p>
+      </article>
+      <article class="development__item">
+        <p class="development__label mono">02 / Studied in simulation</p>
+        <h4>Changing shape. Carrying load.</h4>
+        <p>Mission films show planner simulations. MK1.1 reconfiguration studies check kinematics. Working-force targets still require physical qualification.</p>
+      </article>
+      <article class="development__item">
+        <p class="development__label mono">03 / Next validation goal</p>
+        <h4>A complete task behind an opening.</h4>
+          <p>Stage 1 plans rig tests of access, reconfiguration and working force. These are the foundation for future, smaller module generations.</p>
+      </article>
+    </div>
+  </div>
+  <div class="wrap built__clips">
+    <figure class="clip" data-reveal>
+      <div class="clip__media">
+        <video muted loop playsinline preload="none" poster="assets/media/lab-hang.jpg" data-src="assets/media/lab-hang.mp4" aria-label="Prototype: docked parts hang from a single dock."></video>
+        <span class="badge badge--proto">Prototype</span>
+        <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
+      </div>
+      <figcaption><strong>Docks that carry load</strong><span class="mono">Load-bearing since 4 Oct 2026 · the docked parts hang from one dock · take of 8 Oct</span></figcaption>
+    </figure>
+    <figure class="clip" data-reveal>
+      <div class="clip__media">
+        <video muted loop playsinline preload="none" poster="assets/media/prototype-latch.jpg" data-src="assets/media/prototype-latch.mp4" aria-label="Prototype: two printed faces are brought together and latch."></video>
+        <span class="badge badge--proto">Prototype</span>
+        <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
+      </div>
+      <figcaption><strong>The latch, up close</strong><span class="mono">9 Oct 2026 · two faces latched by hand</span></figcaption>
+    </figure>
+    <figure class="clip" data-reveal>
+      <div class="clip__media">
+        <video muted loop playsinline preload="none" poster="assets/media/lab-powered.jpg" data-src="assets/media/lab-powered.mp4" aria-label="Prototype: the module tilts and extends its head with its own linear actuators."></video>
+        <span class="badge badge--proto">Prototype</span>
+        <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
+      </div>
+      <figcaption><strong>Moves under its own power</strong><span class="mono">Powered since 16 Oct 2026 · head tilt and extension by its six actuators · take of 20 Oct</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- PHYSICS -->
+<section class="paper physics" id="physics" aria-labelledby="physics-title">
+  <span id="how" aria-hidden="true"></span>
+  <div class="wrap section-head section-head--split" data-reveal>
+    <div>
+      <p class="eyebrow">04 · Why it works</p>
+      <h2 id="physics-title" class="h2">Enter as a chain. Work as a structure.</h2>
+    </div>
+    <p class="lead">Enter through a narrow opening. Reconfigure on site. Build the structure the task needs.</p>
+  </div>
+  <div class="wrap physics__grid">
+    <div class="force-principle" data-reveal>
+      <p class="eyebrow">Access, reconfigure, work</p>
+      <h3 class="h3">Change shape. Apply force.</h3>
+      <p>Local bracing and parallel load paths turn the same modules into a working structure.</p>
+    </div>
+    <div class="physics__nums" data-reveal>
+      <dl class="stats stats--paper">
+        <div><dt class="mono">Force target ratio</dt><dd>10.2&times; <small>200 N target vs. Reach Alpha 5's published lift-load equivalent (19.6 N).</small></dd></div>
+        <div><dt class="mono">Tool force target</dt><dd>200 N <small>Held for 60 s with at most 5 mm displacement, after bracing.</small></dd></div>
+        <div><dt class="mono">Configuration target</dt><dd>200+ <small>Across access, braced work and legged locomotion.</small></dd></div>
+      </dl>
+      <p class="force-note">Development targets. Physical validation and experimental comparison pending.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="technical-details">
+<div class="shift__matrix">
+    <h3 class="h3">Which robot gets the whole job done?</h3>
+    <div class="matrix-scroll" role="region" aria-label="Capability comparison" tabindex="0">
+      <table class="matrix">
+        <caption class="sr">What each option can do in the mission, our assessment</caption>
+        <thead><tr><th scope="col"><span class="sr">Mission step</span></th><th scope="col">Person</th><th scope="col">Legged robot</th><th scope="col">Tracked robot</th><th scope="col">Drone</th><th scope="col">Snake robot</th><th scope="col" class="is-us">Proteus</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Keeps people out of the danger zone</th><td><span class="cap cap--no">No</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td class="is-us"><span class="cap cap--yes">Yes</span></td></tr>
+          <tr><th scope="row">Crosses rubble and gaps</th><td><span class="cap cap--part">At risk</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--part">Small gaps</span></td><td><span class="cap cap--yes">Flies</span></td><td><span class="cap cap--no">No</span></td><td class="is-us"><span class="cap cap--yes">Walker, bridge</span></td></tr>
+          <tr><th scope="row">Passes a 250 mm opening</th><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--part">Small units only</span></td><td><span class="cap cap--part">Small units, no contact</span></td><td><span class="cap cap--yes">Yes</span></td><td class="is-us"><span class="cap cap--yes">As a chain</span></td></tr>
+          <tr><th scope="row">Applies force at 1 m reach behind it</th><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">Little force at reach</span></td><td class="is-us"><span class="cap cap--yes">Braced, 200 N target</span></td></tr>
+          <tr><th scope="row">One kit for every shape of job</th><td><span class="cap cap--none">n/a</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td class="is-us"><span class="cap cap--yes">Yes</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="matrix__hint mono">Swipe to compare all options →</p>
+  </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXECUTION -->
+<section class="execution" id="execution" aria-labelledby="execution-title">
+  <div class="wrap section-head section-head--split" data-reveal>
+    <div><p class="eyebrow">05 &middot; Execution</p><h2 class="h2" id="execution-title">Prove each step.<br>Then scale.</h2></div>
+    <p class="lead">The prototype is the starting point. Our plan links hardware qualification, customer validation and integration before the full mission.</p>
+  </div>
+  <div class="wrap">
+    <ol class="execution__steps">
+      <li data-reveal><p class="eyebrow">Stage 1 / Qualification</p><h3 class="h3">Make the working structure reliable.</h3><p>Test access, reconfiguration and withdrawal on the rig. Qualify the 200 N working-force target across braced configurations.</p><p class="execution__proof"><b>Evidence:</b> repeatable hardware tests, measured operating limits and an independent repeat of a test subset.</p></li>
+      <li data-reveal><p class="eyebrow">Stage 2 / Integration</p><h3 class="h3">Move beyond the rig.</h3><p>Extend testing to representative plant environments, aging cycles and integration with an external robot.</p><p class="execution__proof"><b>Evidence:</b> durability results and successful integration on a host system.</p></li>
+      <li data-reveal><p class="eyebrow">Stages 3 and 4 / Full mission</p><h3 class="h3">Connect the complete task.</h3><p>Add the walking approach and return, repeat the end-to-end mission independently and prepare for series design.</p><p class="execution__proof"><b>Evidence:</b> complete mission runs, retained performance after aging and paid pilot work.</p></li>
+    </ol>
+    <p class="execution__gate">Hiring and module builds follow measured milestones. The compact MK4 line develops alongside this qualification path; further miniaturization remains the longer-term ambition.</p>
+  </div>
+</section>
+
+<!-- MISSION AND VISION -->
+<section class="vision" id="vision" aria-labelledby="vision-title">
+  <span id="progress" aria-hidden="true"></span>
+  <div class="wrap section-head" data-reveal>
+    <p class="eyebrow">06 · Long-term vision</p>
+    <h2 id="vision-title" class="h2 vision__title">Smaller units.<br>More complex tasks.</h2>
+  </div>
+  <div class="wrap" data-reveal>
+    <p class="vision__statement">Our five-year ambition: halve module size three times. The first industrial tasks establish the foundation; smaller generations could unlock finer structures, narrower access and more complex work.</p>
+    <figure class="vision-scale" aria-labelledby="vision-scale-caption">
+      <ol class="vision-scale__steps">
+        <li style="--scale:1"><span class="mono">Starting scale</span><div class="vision-scale__space" aria-hidden="true"><span class="vision-scale__bar"></span></div><strong>1&times;</strong></li>
+        <li style="--scale:.5"><span class="mono">First halving</span><div class="vision-scale__space" aria-hidden="true"><span class="vision-scale__bar"></span></div><strong>1/2</strong></li>
+        <li style="--scale:.25"><span class="mono">Second halving</span><div class="vision-scale__space" aria-hidden="true"><span class="vision-scale__bar"></span></div><strong>1/4</strong></li>
+        <li style="--scale:.125"><span class="mono">Third halving</span><div class="vision-scale__space" aria-hidden="true"><span class="vision-scale__bar"></span></div><strong>1/8</strong></li>
+      </ol>
+      <figcaption class="mono" id="vision-scale-caption">Relative linear dimensions. A five-year development ambition.</figcaption>
+    </figure>
+    <div class="vision__path">
+      <div><p class="eyebrow">First step</p><h3 class="h3">Build the foundation.</h3><p>Qualify the modules, connections and working structures. The compact MK4 line is the first step toward smaller units.</p></div>
+      <div><p class="eyebrow">Long-term direction</p><h3 class="h3">Make finer work possible.</h3><p>More units within a structure could support richer shapes and more complex tasks. Each generation needs its own engineering and validation.</p></div>
+    </div>
+    <figure class="vision__render">
+      <img src="assets/media/vision-modules.jpg" width="2045" height="889" loading="lazy" alt="Current planner model with 20 modules beside a concept using 80 modules at half size in the same four-legged body plan.">
+      <figcaption class="mono">From the SPRIND application: the same body plan with smaller modules. Concept rendering, not a planned or validated configuration.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- MODULE -->
+<section class="module" id="module" aria-labelledby="module-title">
+  <div class="wrap section-head section-head--split" data-reveal>
+    <div>
+      <p class="eyebrow">07 · The module</p>
+      <h2 id="module-title" class="h2">Everything is made of one part.</h2>
+    </div>
+    <p class="lead">One module, combined into many structures. We are building and qualifying the foundation today, with smaller generations planned for finer structures and narrower access.</p>
+  </div>
+  <div class="wrap module__grid">
+    <figure class="drawing" data-reveal>
+      <svg class="drawing__svg" viewBox="0 0 760 330" role="img" aria-labelledby="drawing-title">
+        <title id="drawing-title">Side view of one Proteus module: a slim strut with a docking head at each end, three linear actuators per end, numbered callouts 1 to 4.</title>
+        <defs>
+          <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 9 5 0 9z" fill="currentColor"/></marker>
+        </defs>
+        <g class="dw-grid" aria-hidden="true">
+          <path d="M40 300H720"/>
+        </g>
+        <!-- dimension: span -->
+        <g class="dw-dim">
+          <path d="M120 64v32M640 64v32"/>
+          <path d="M126 72H634" marker-start="url(#arr)" marker-end="url(#arr)"/>
+          <text x="380" y="60" text-anchor="middle">head-to-head span 410–610 mm</text>
+        </g>
+        <!-- strut -->
+        <g class="dw-strut">
+          <rect x="236" y="168" width="288" height="26" rx="13"/>
+          <path class="dw-ring" d="M268 168v26M492 168v26"/>
+        </g>
+        <!-- actuators left -->
+        <g class="dw-act">
+          <path d="M236 172 166 150M236 190 166 212M236 181 170 181"/>
+          <path d="M524 172 594 150M524 190 594 212M524 181 590 181"/>
+        </g>
+        <!-- heads: truncated octahedron silhouettes -->
+        <g class="dw-head">
+          <path d="M120 126 154 140 168 181 154 222 120 236 86 222 72 181 86 140z"/>
+          <path class="dw-face" d="M104 160h32l12 21-12 21h-32l-12-21z"/>
+          <path d="M640 126 674 140 688 181 674 222 640 236 606 222 592 181 606 140z"/>
+          <path class="dw-face" d="M624 160h32l12 21-12 21h-32l-12-21z"/>
+        </g>
+        <!-- diameter -->
+        <g class="dw-dim">
+          <path d="M60 126v110"/>
+          <path d="M52 126h16M52 236h16"/>
+          <text x="40" y="186" text-anchor="middle" transform="rotate(-90 40 186)">Ø ~110 mm</text>
+        </g>
+        <!-- callouts -->
+        <g class="dw-call">
+          <path d="M120 236v40"/><circle cx="120" cy="290" r="13"/><text x="120" y="295" text-anchor="middle">1</text>
+          <path d="M196 200 214 262"/><circle cx="220" cy="276" r="13"/><text x="220" y="281" text-anchor="middle">2</text>
+          <path d="M380 194v62"/><circle cx="380" cy="270" r="13"/><text x="380" y="275" text-anchor="middle">3</text>
+          <path d="M640 236v40"/><circle cx="640" cy="290" r="13"/><text x="640" y="295" text-anchor="middle">4</text>
+        </g>
+      </svg>
+      <figcaption class="mono">Schematic, not to scale. MK1 today; MK3 doubles the actuator force in the same envelope.</figcaption>
+    </figure>
+    <ol class="specs" data-reveal>
+      <li><b>Docking head</b><span>A dedicated interface connects modules into load-bearing structures and supports reconfiguration for different tasks.</span></li>
+      <li><b>Six degrees of freedom</b><span>At each end, three self-locking linear actuators tilt the head by up to 50° and extend it: a head-to-head span of 410 to 610 mm.</span></li>
+      <li><b>One strut, many roles</b><span>Leg, beam, chain link or brace: the same part, about 110 mm across and 0.45 m long.</span></li>
+      <li><b>Power through the dock</b><span>The connection supports power sharing within the structure. Compatible tools and sensors extend what the module system can do.</span></li>
+    </ol>
+  </div>
+  <div class="wrap studies" id="studies">
+    <h3 class="h3 studies__title" data-reveal>Planner studies on the exact MK1.1 kinematics.</h3>
+    <div class="studies__grid">
+      <figure class="clip" data-reveal>
+        <div class="clip__media clip__media--wide">
+          <video muted loop playsinline preload="none" poster="assets/media/lab-stack-to-chain.jpg" data-src="assets/media/lab-stack-to-chain.mp4" aria-label="Planner playback: four units turn a compact stack into a chain."></video>
+          <span class="badge badge--ok">Planner · MK1.1 kinematics</span>
+          <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
+        </div>
+        <figcaption><strong>From a compact stack to a chain</strong><span class="mono">9 docking steps · 362 poses checked for rod stroke, head tilt, dock faces and collisions · kinematics only</span></figcaption>
+      </figure>
+      <figure class="clip" data-reveal>
+        <div class="clip__media clip__media--wide">
+          <video muted loop playsinline preload="none" poster="assets/media/lab-anchor-change.jpg" data-src="assets/media/lab-anchor-change.mp4" aria-label="Planner playback: one unit docks to a second head, releases the floor and moves from its new anchor."></video>
+          <span class="badge badge--ok">Planner · MK1.1 kinematics</span>
+          <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
+        </div>
+        <figcaption><strong>One unit changes its anchor</strong><span class="mono">The sequence of our hardware test rig · kinematics only</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- SHIFT -->
 <section class="mission" id="shift" aria-labelledby="shift-title">
   <span id="mission" aria-hidden="true"></span>
   <div class="wrap section-head" data-reveal>
-    <p class="eyebrow">02 · The shift</p>
-    <h2 id="shift-title" class="h2 h2--key">Every fixed-shape robot <em>fails one phase</em> of the job.</h2>
-    <p class="lead">Proteus changes shape for each phase of a mission. This simulation shows the principle at today's scale. Smaller future modules could extend it to finer structures and more complex tasks.</p>
+    <p class="eyebrow">08 · Mission concept</p>
+    <h2 id="shift-title" class="h2 h2--key">One platform. <em>A complete mission.</em></h2>
+    <p class="lead">This planner simulation illustrates the longer-term mission: approach, gain access, work and return. The full sequence remains a development goal.</p>
   </div>
 
   <div class="wrap film" id="film" data-reveal>
@@ -288,263 +566,10 @@
 
 </section>
 
-<!-- BUILT -->
-<section class="paper built" id="built" aria-labelledby="built-title">
-  <div class="wrap built__head" data-reveal>
-    <div>
-      <p class="eyebrow">03 · Built, not rendered</p>
-      <h2 id="built-title" class="h2">The first module is real.</h2>
-    </div>
-    <p class="lead">MK1 module with two actuated heads, docks that carry load and a test rig for powered docking. Single takes on our bench, with date.</p>
-  </div>
-  <div class="wrap development" id="development" role="region" aria-labelledby="development-title">
-    <h3 class="development__heading mono" id="development-title">Development status</h3>
-    <div class="development__grid">
-      <article class="development__item">
-        <p class="development__label mono">01 / Demonstrated in hardware</p>
-        <h4>Powered module. Load-bearing docks.</h4>
-        <p>The MK1 prototype moves its heads under its own power. Bench clips below show docking and parts suspended from a single dock.</p>
-      </article>
-      <article class="development__item">
-        <p class="development__label mono">02 / Studied in simulation</p>
-        <h4>Changing shape. Carrying load.</h4>
-        <p>Mission films show planner simulations. MK1.1 reconfiguration studies check kinematics. Working-force targets still require physical qualification.</p>
-      </article>
-      <article class="development__item">
-        <p class="development__label mono">03 / Next validation goal</p>
-        <h4>A complete task behind an opening.</h4>
-          <p>Stage 1 plans rig tests of access, reconfiguration and working force. These are the foundation for future, smaller module generations.</p>
-      </article>
-    </div>
-  </div>
-  <div class="wrap built__clips">
-    <figure class="clip" data-reveal>
-      <div class="clip__media">
-        <video muted loop playsinline preload="none" poster="assets/media/lab-hang.jpg" data-src="assets/media/lab-hang.mp4" aria-label="Prototype: docked parts hang from a single dock."></video>
-        <span class="badge badge--proto">Prototype</span>
-        <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
-      </div>
-      <figcaption><strong>Docks that carry load</strong><span class="mono">Load-bearing since 4 Oct 2026 · the docked parts hang from one dock · take of 8 Oct</span></figcaption>
-    </figure>
-    <figure class="clip" data-reveal>
-      <div class="clip__media">
-        <video muted loop playsinline preload="none" poster="assets/media/prototype-latch.jpg" data-src="assets/media/prototype-latch.mp4" aria-label="Prototype: two printed faces are brought together and latch."></video>
-        <span class="badge badge--proto">Prototype</span>
-        <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
-      </div>
-      <figcaption><strong>The latch, up close</strong><span class="mono">9 Oct 2026 · two faces latched by hand</span></figcaption>
-    </figure>
-    <figure class="clip" data-reveal>
-      <div class="clip__media">
-        <video muted loop playsinline preload="none" poster="assets/media/lab-powered.jpg" data-src="assets/media/lab-powered.mp4" aria-label="Prototype: the module tilts and extends its head with its own linear actuators."></video>
-        <span class="badge badge--proto">Prototype</span>
-        <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
-      </div>
-      <figcaption><strong>Moves under its own power</strong><span class="mono">Powered since 16 Oct 2026 · head tilt and extension by its six actuators · take of 20 Oct</span></figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- MODULE -->
-<section class="module" id="module" aria-labelledby="module-title">
-  <div class="wrap section-head section-head--split" data-reveal>
-    <div>
-      <p class="eyebrow">04 · The module</p>
-      <h2 id="module-title" class="h2">Everything is made of one part.</h2>
-    </div>
-    <p class="lead">One module, combined into many structures. We are building and qualifying the foundation today, with smaller generations planned for finer structures and narrower access.</p>
-  </div>
-  <div class="wrap module__grid">
-    <figure class="drawing" data-reveal>
-      <svg class="drawing__svg" viewBox="0 0 760 330" role="img" aria-labelledby="drawing-title">
-        <title id="drawing-title">Side view of one Proteus module: a slim strut with a docking head at each end, three linear actuators per end, numbered callouts 1 to 4.</title>
-        <defs>
-          <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 9 5 0 9z" fill="currentColor"/></marker>
-        </defs>
-        <g class="dw-grid" aria-hidden="true">
-          <path d="M40 300H720"/>
-        </g>
-        <!-- dimension: span -->
-        <g class="dw-dim">
-          <path d="M120 64v32M640 64v32"/>
-          <path d="M126 72H634" marker-start="url(#arr)" marker-end="url(#arr)"/>
-          <text x="380" y="60" text-anchor="middle">head-to-head span 410–610 mm</text>
-        </g>
-        <!-- strut -->
-        <g class="dw-strut">
-          <rect x="236" y="168" width="288" height="26" rx="13"/>
-          <path class="dw-ring" d="M268 168v26M492 168v26"/>
-        </g>
-        <!-- actuators left -->
-        <g class="dw-act">
-          <path d="M236 172 166 150M236 190 166 212M236 181 170 181"/>
-          <path d="M524 172 594 150M524 190 594 212M524 181 590 181"/>
-        </g>
-        <!-- heads: truncated octahedron silhouettes -->
-        <g class="dw-head">
-          <path d="M120 126 154 140 168 181 154 222 120 236 86 222 72 181 86 140z"/>
-          <path class="dw-face" d="M104 160h32l12 21-12 21h-32l-12-21z"/>
-          <path d="M640 126 674 140 688 181 674 222 640 236 606 222 592 181 606 140z"/>
-          <path class="dw-face" d="M624 160h32l12 21-12 21h-32l-12-21z"/>
-        </g>
-        <!-- diameter -->
-        <g class="dw-dim">
-          <path d="M60 126v110"/>
-          <path d="M52 126h16M52 236h16"/>
-          <text x="40" y="186" text-anchor="middle" transform="rotate(-90 40 186)">Ø ~110 mm</text>
-        </g>
-        <!-- callouts -->
-        <g class="dw-call">
-          <path d="M120 236v40"/><circle cx="120" cy="290" r="13"/><text x="120" y="295" text-anchor="middle">1</text>
-          <path d="M196 200 214 262"/><circle cx="220" cy="276" r="13"/><text x="220" y="281" text-anchor="middle">2</text>
-          <path d="M380 194v62"/><circle cx="380" cy="270" r="13"/><text x="380" y="275" text-anchor="middle">3</text>
-          <path d="M640 236v40"/><circle cx="640" cy="290" r="13"/><text x="640" y="295" text-anchor="middle">4</text>
-        </g>
-      </svg>
-      <figcaption class="mono">Schematic, not to scale. MK1 today; MK3 doubles the actuator force in the same envelope.</figcaption>
-    </figure>
-    <ol class="specs" data-reveal>
-      <li><b>Docking head</b><span>A dedicated interface connects modules into load-bearing structures and supports reconfiguration for different tasks.</span></li>
-      <li><b>Six degrees of freedom</b><span>At each end, three self-locking linear actuators tilt the head by up to 50° and extend it: a head-to-head span of 410 to 610 mm.</span></li>
-      <li><b>One strut, many roles</b><span>Leg, beam, chain link or brace: the same part, about 110 mm across and 0.45 m long.</span></li>
-      <li><b>Power through the dock</b><span>The connection supports power sharing within the structure. Compatible tools and sensors extend what the module system can do.</span></li>
-    </ol>
-  </div>
-  <div class="wrap studies" id="studies">
-    <h3 class="h3 studies__title" data-reveal>Planner studies on the exact MK1.1 kinematics.</h3>
-    <div class="studies__grid">
-      <figure class="clip" data-reveal>
-        <div class="clip__media clip__media--wide">
-          <video muted loop playsinline preload="none" poster="assets/media/lab-stack-to-chain.jpg" data-src="assets/media/lab-stack-to-chain.mp4" aria-label="Planner playback: four units turn a compact stack into a chain."></video>
-          <span class="badge badge--ok">Planner · MK1.1 kinematics</span>
-          <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
-        </div>
-        <figcaption><strong>From a compact stack to a chain</strong><span class="mono">9 docking steps · 362 poses checked for rod stroke, head tilt, dock faces and collisions · kinematics only</span></figcaption>
-      </figure>
-      <figure class="clip" data-reveal>
-        <div class="clip__media clip__media--wide">
-          <video muted loop playsinline preload="none" poster="assets/media/lab-anchor-change.jpg" data-src="assets/media/lab-anchor-change.mp4" aria-label="Planner playback: one unit docks to a second head, releases the floor and moves from its new anchor."></video>
-          <span class="badge badge--ok">Planner · MK1.1 kinematics</span>
-          <button class="media-toggle" type="button" aria-label="Play or pause"><span aria-hidden="true"></span></button>
-        </div>
-        <figcaption><strong>One unit changes its anchor</strong><span class="mono">The sequence of our hardware test rig · kinematics only</span></figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- PHYSICS -->
-<section class="paper physics" id="physics" aria-labelledby="physics-title">
-  <span id="how" aria-hidden="true"></span>
-  <div class="wrap section-head section-head--split" data-reveal>
-    <div>
-      <p class="eyebrow">05 · Why it works</p>
-      <h2 id="physics-title" class="h2">Enter as a chain. Work as a structure.</h2>
-    </div>
-    <p class="lead">Enter through a narrow opening. Reconfigure on site. Build the structure the task needs.</p>
-  </div>
-  <div class="wrap physics__grid">
-    <div class="force-principle" data-reveal>
-      <p class="eyebrow">Access, reconfigure, work</p>
-      <h3 class="h3">Change shape. Apply force.</h3>
-      <p>Local bracing and parallel load paths turn the same modules into a working structure.</p>
-    </div>
-    <div class="physics__nums" data-reveal>
-      <dl class="stats stats--paper">
-        <div><dt class="mono">Force target ratio</dt><dd>10.2&times; <small>200 N target vs. Reach Alpha 5's published lift-load equivalent (19.6 N).</small></dd></div>
-        <div><dt class="mono">Tool force target</dt><dd>200 N <small>Held for 60 s with at most 5 mm displacement, after bracing.</small></dd></div>
-        <div><dt class="mono">Configuration target</dt><dd>200+ <small>Across access, braced work and legged locomotion.</small></dd></div>
-      </dl>
-      <p class="force-note">Development targets. Physical validation and experimental comparison pending.</p>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="technical-details">
-<div class="shift__matrix">
-    <h3 class="h3">Which robot gets the whole job done?</h3>
-    <div class="matrix-scroll" role="region" aria-label="Capability comparison" tabindex="0">
-      <table class="matrix">
-        <caption class="sr">What each option can do in the mission, our assessment</caption>
-        <thead><tr><th scope="col"><span class="sr">Mission step</span></th><th scope="col">Person</th><th scope="col">Legged robot</th><th scope="col">Tracked robot</th><th scope="col">Drone</th><th scope="col">Snake robot</th><th scope="col" class="is-us">Proteus</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Keeps people out of the danger zone</th><td><span class="cap cap--no">No</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--yes">Yes</span></td><td class="is-us"><span class="cap cap--yes">Yes</span></td></tr>
-          <tr><th scope="row">Crosses rubble and gaps</th><td><span class="cap cap--part">At risk</span></td><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--part">Small gaps</span></td><td><span class="cap cap--yes">Flies</span></td><td><span class="cap cap--no">No</span></td><td class="is-us"><span class="cap cap--yes">Walker, bridge</span></td></tr>
-          <tr><th scope="row">Passes a 250 mm opening</th><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--part">Small units only</span></td><td><span class="cap cap--part">Small units, no contact</span></td><td><span class="cap cap--yes">Yes</span></td><td class="is-us"><span class="cap cap--yes">As a chain</span></td></tr>
-          <tr><th scope="row">Applies force at 1 m reach behind it</th><td><span class="cap cap--yes">Yes</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">Little force at reach</span></td><td class="is-us"><span class="cap cap--yes">Braced, 200 N target</span></td></tr>
-          <tr><th scope="row">One kit for every shape of job</th><td><span class="cap cap--none">n/a</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td><span class="cap cap--no">No</span></td><td class="is-us"><span class="cap cap--yes">Yes</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="matrix__hint mono">Swipe to compare all options →</p>
-  </div>
-    </div>
-  </div>
-</section>
-
-<!-- FIRST JOB -->
-<section class="paper firstjob" id="first-job" aria-labelledby="fj-title">
-  <span id="market" aria-hidden="true"></span>
-  <div class="wrap section-head section-head--split" data-reveal>
-    <div>
-      <p class="eyebrow">06 · First job</p>
-      <h2 id="fj-title" class="h2">We start where the access is defined.</h2>
-    </div>
-    <p class="lead">We start with work inside energy and industrial equipment. Stage 1 plans rig tests: unfold from a magazine, enter as a chain, form a braced working structure and withdraw.</p>
-  </div>
-  <div class="wrap theaters__grid">
-    <article class="theater theater--first" data-reveal>
-      <p class="theater__step mono">First</p>
-      <h3 class="h3">Energy and industrial plants</h3>
-      <p>Retrieve foreign objects, inspect internals and place sensors inside vessels and columns. The goal: fewer confined-space entries, fewer equipment openings and less downtime.</p>
-    </article>
-    <article class="theater" data-reveal>
-      <p class="theater__step mono">Further applications</p>
-      <h3 class="h3">Civil protection and rescue</h3>
-      <p>Planned applications include inspecting collapsed structures and voids before anyone enters.</p>
-    </article>
-    <article class="theater" data-reveal>
-      <p class="theater__step mono">Dual-use</p>
-      <h3 class="h3">Defense maintenance and protection</h3>
-      <p>Planned applications include maintenance inside military aircraft fuel tanks and vehicle hulls, explosive ordnance disposal and CBRN reconnaissance.</p>
-    </article>
-  </div>
-
-</section>
-
-
-<!-- MISSION AND VISION -->
-<section class="vision" id="vision" aria-labelledby="vision-title">
-  <span id="progress" aria-hidden="true"></span>
-  <div class="wrap section-head" data-reveal>
-    <p class="eyebrow">07 · Mission and vision</p>
-    <h2 id="vision-title" class="h2 vision__title">Smaller units.<br>More complex tasks.</h2>
-  </div>
-  <div class="wrap" data-reveal>
-    <p class="vision__statement">Our five-year ambition: halve module size three times. Smaller units could form finer structures, create more load paths and work through narrower openings.</p>
-    <figure class="vision-scale" aria-labelledby="vision-scale-caption">
-      <ol class="vision-scale__steps">
-        <li style="--scale:1"><span class="mono">Starting scale</span><div class="vision-scale__space" aria-hidden="true"><span class="vision-scale__bar"></span></div><strong>1&times;</strong></li>
-        <li style="--scale:.5"><span class="mono">First halving</span><div class="vision-scale__space" aria-hidden="true"><span class="vision-scale__bar"></span></div><strong>1/2</strong></li>
-        <li style="--scale:.25"><span class="mono">Second halving</span><div class="vision-scale__space" aria-hidden="true"><span class="vision-scale__bar"></span></div><strong>1/4</strong></li>
-        <li style="--scale:.125"><span class="mono">Third halving</span><div class="vision-scale__space" aria-hidden="true"><span class="vision-scale__bar"></span></div><strong>1/8</strong></li>
-      </ol>
-      <figcaption class="mono" id="vision-scale-caption">Relative linear dimensions. A five-year development ambition.</figcaption>
-    </figure>
-    <div class="vision__path">
-      <div><p class="eyebrow">First step</p><h3 class="h3">Build the foundation.</h3><p>Qualify the modules, connections and working structures. The compact MK4 line is the first step toward smaller units.</p></div>
-      <div><p class="eyebrow">Long-term direction</p><h3 class="h3">Make finer work possible.</h3><p>More units within a structure could support richer shapes and more complex tasks. Each generation needs its own engineering and validation.</p></div>
-    </div>
-    <figure class="vision__render">
-      <img src="assets/media/vision-modules.jpg" width="2045" height="889" loading="lazy" alt="Current planner model with 20 modules beside a concept using 80 modules at half size in the same four-legged body plan.">
-      <figcaption class="mono">From the SPRIND application: the same body plan with smaller modules. Concept rendering, not a planned or validated configuration.</figcaption>
-    </figure>
-  </div>
-</section>
-
 <!-- TEAM -->
 <section class="team" id="team" aria-label="Team">
   <div class="wrap section-head section-head--wide" data-reveal>
-    <p class="eyebrow">08 · Team</p>
+    <p class="eyebrow">09 · Team</p>
     <h2 class="h2">The people behind Proteus.</h2>
   </div>
   <div class="wrap">
@@ -575,10 +600,10 @@
 <section class="contact" id="contact" aria-labelledby="contact-title">
   <div class="wrap contact__inner" data-reveal>
     <h2 id="contact-title" class="contact__title">Let&rsquo;s discuss your pilot application.</h2>
-    <p class="lead">Help shape the first applications and the next module generations. Tell us the access opening, the environment and the task.</p>
+    <p class="lead">We welcome conversations with pilot customers, integration partners and investors building the next generation of modular robotics.</p>
     <div class="hero__actions">
       <a class="btn btn--accent" href="mailto:yannik.trinn@outis-robotics.com?subject=Proteus%20pilot%20application">Discuss a pilot application <span aria-hidden="true">&#8599;</span></a>
-      <a class="btn btn--ghost" href="https://www.linkedin.com/in/yannik-trinn/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn--ghost" href="mailto:yannik.trinn@outis-robotics.com?subject=Proteus%20investment%20discussion">Discuss the company <span aria-hidden="true">&#8599;</span></a>
     </div>
   </div>
 </section>
