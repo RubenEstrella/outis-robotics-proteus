@@ -11,14 +11,24 @@ shortened; evidence labels and technical content are retained.
 To return to the original styling, remove the `figure-study.css` stylesheet link.
 The original design and ordering checkpoint is saved on GitHub as `0316f24`.
 
-Reading order: hero → problem → mission film and three key capabilities → development
-status and prototype evidence and
-team-background logos → module → physics → applications and Stage 1 specifications
-→ mission and vision → founders film and biographies → contact. The route diagram
-follows the mission phases. Three further mission clips are available in a native, keyboard-accessible
-disclosure. The robot comparison is always visible; the detailed Stage 1
-specifications and targets block has been removed. Mission and vision share one concise statement. The contact action
-opens an email about a pilot application. All original media are retained.
+Reading order: vision hero -> team-background logos -> problem -> mission film and
+three key capabilities -> development status and prototype evidence -> module ?
+physics -> applications -> miniaturization vision -> founders and biographies -> contact.
+Three further mission clips remain in a keyboard-accessible disclosure. The robot
+comparison is always visible; the detailed Stage 1 block has been removed.
+
+The hero uses the existing concept rendering embedded in SPRIND v18, Appendix C.8:
+`word/media/image1.jpg`, retained as `assets/media/vision-modules.jpg`. The inline
+SVG viewport presents the visionary half of the original comparison without
+altering the source bitmap. The full comparison is shown in section 07.
+It is a concept rendering, not an engineering-checked configuration.
+
+The three size halvings within five years are the founder's new long-term ambition,
+requested on 24 October 2026, not a commitment quoted from the application.
+The 1 -> 1/2 -> 1/4 -> 1/8 graphic describes relative linear dimensions. The
+application supports the smaller-module direction and compact MK4 as its first
+step; it does not establish force retention or full mission capability at those
+future scales. The original mission film remains in section 02.
 
 Force claims in section 05 are grounded in the Track 2 Metric 1 table and
 Appendix C of `Proteus_SPRIND_Track_2_v18.docx` in Google Drive (file ID
